@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@300;400;500&family=Urbanist:wght@100;200;400;500;700;900&display=swap');
+
+/* Global styles */
+body,
+p,
+h1,
+h2,
+li,
+a {
+  font-family: "Urbanist", sans-serif;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  color: #111111;
+}
+
+* {
+  font-family: "Urbanist", sans-serif;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  position: relative;
+}
+
+h3 {
+  font-family: "Urbanist", sans-serif;
+  font-size: 8px;
+  background-color: pink;
+}
+
+
+/*Header*/
+header {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  height: 10vh;
+  border-bottom: 1px solid #111111;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.header-item {
+  display: flex;
+  padding-left: 3vw;
+  padding-right: 3vw;
+}
+
+
+.navbar-nav {
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.nav-item {
+  font-family: "Red Hat Mono", sans-serif;
+  padding: .7rem;
+  text-decoration: none;
+
+}
+
+.navbar-toggler-icon {}
+
+/*Main*/
+main {
+  top: 10%;
+  overflow: hidden;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  align-items: middle;
+  justify-content: center:
+}
+
+/* Section Containers */
+
+#home {
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+.container-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-md {
+  text-align: left;
+}
+
+.col-md-3 {}
+
+/*Carousel*/
+.carousel {
+  height: 100vh;
+  background-color: aquamarine;
+}
+
+.carousel-item {
+  height: 100vh;
+  width: 100vw;
+  background-color: red;
+}
+
+.carousel-item img {
+  display: flex;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.carousel.caption {
+  position: absolute;
+}
+
+/*Services*/
+
+.container-fluid services {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100vh;
+
+}
+
+.services-page.description {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  height: 100%;
+  background-color: #57ABC6;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.services-page.img-wrapper {
+  display: flex;
+  position: relative;
+  height: 100vh;
+}
+
+.services-page.img {
+  display: flex;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  object-fit: cover;
+  background-color: #57ABC6;
+}
+
+/*Cards*/
+
+.card {
+  border: 1px solid black;
+  border-radius: 0;
+}
+
+.card-services {
+  padding: .8em;
+  border: 1px solid #343a40;
+  /* Dark border */
+  border-radius: 0;
+  /* No rounded corners */
+  flex-grow: 1;
+  margin-bottom: 1rem;
+}
+
+.card-title {
+  font-family: "Urbanist", sans-serif;
+  font-weight: 500;
+  font-size: .8em;
+}
+
+.card-text {
+  font-family: "Urbanist", sans-serif;
+  font-weight: 400;
+  font-size: .8em;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: 5vh;
+  justify-content: space-between;
+  align-items: center;
+  font-size: small;
+}
+
+.links {
+  font-family: "Red Hat Mono", sans-serif;
+  display: flex;
+  justify-content: right;
+  text-align: right;
+  text-decoration: none;
+}
+
+.logo {
+  display: flex;
+  flex: 1;
+}
+
+.logo img {
+  justify-content: center;
+  align-items: center;
+}
+
+.address,
+.hours {
+  line-height: 1;
+}
