@@ -1,0 +1,142 @@
+/* root */
+
+body {
+    background-color: aliceblue;
+    font-family: 'Albert Sans', sans-serif;
+    color: darkslategray;
+    margin: 0px;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    align-items: left;
+    justify-content: center;
+}
+
+.img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.text-wrap {
+    padding: 32px;
+}
+
+p, li {
+    font-family: 'Buenard', serif;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.background {
+    display:flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+}
+
+
+
+/* service */
+.services-wrapper {
+    display: flex;
+    top: 0;
+    flex-direction: row;
+    padding: 80px 32px 0;
+    height: 100%;
+    z-index: 2;
+}
+
+.services-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+
+.service-description {
+    color: aliceblue;
+    margin: 32px 0px;
+}
+
+.display-text {
+    position: sticky;
+    top: 80px;
+    font-size: 52px;
+    color: darkslategray;
+    text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.services-column {
+    z-index: 2;
+}
+ 
+.service-container {
+    display:flex;
+    flex-direction: column;
+    background-color: rgba(240, 248, 255, 0.69);
+    padding: 56px 32px;
+    border: 1px solid darkslategray;
+    margin-bottom: 32px;
+    z-index: 2;
+}
+
+.services-gallery-wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 64px 32px;
+}
+
+.gallery-title {
+    display: flex;
+    align-self: center;
+    flex: 1;
+}
+
+.gallery-wrapper {
+    display: flex;
+    flex:2;
+
+}
+
+.gallery {
+    display: grid;
+    width: 100%;
+    gap: 8px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.project-image {
+    height: calc((100vh - 120px)/3);
+    width: 100%;;
+}
+
+@media screen and (max-width: 1000px) {
+    .gallery {
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: auto;
+    }
+
+    .services-wrapper {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 667px) {
+    .gallery {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+}
