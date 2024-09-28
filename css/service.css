@@ -42,23 +42,26 @@ p, li {
     z-index: 1;
 }
 
+hr {
+    height: 1px; /* Thickness of the line */
+    background-color: #57abc6; /* Color of the line */
+    border: none; /* Remove default border */
+    margin: 20px 0; /* Space above and below the line */
+    width: 100%; /* Width of the line */
+    margin-left: auto; /* Center the line */
+    margin-right: auto; /* Center the line */
+}
 
 
 /* service */
-.services-wrapper {
+.wrapper {
     display: flex;
-    top: 0;
-    flex-direction: row;
-    padding: 80px 32px 0;
-    height: 100%;
-    z-index: 2;
+    flex-direction: column;
 }
 
-.services-wrapper::-webkit-scrollbar {
-    display: none;
-  }
 
 .service-description {
+width: 33%;
     color: aliceblue;
     margin: 32px 0px;
 }
@@ -66,12 +69,13 @@ p, li {
 .display-text {
     position: sticky;
     top: 80px;
-    font-size: 52px;
+    font-size: 48px;
     color: darkslategray;
     text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .services-column {
+    width: 66.7%;
     z-index: 2;
 }
  
@@ -85,42 +89,82 @@ p, li {
     z-index: 2;
 }
 
-.services-gallery-wrapper {
+.services-about-wrapper {
+    height: calc(100vh - 80px);
+    padding-top: 80px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     position: relative;
-    padding: 64px 32px;
 }
 
-.gallery-title {
-    display: flex;
-    align-self: center;
-    flex: 1;
-}
-
-.gallery-wrapper {
-    display: flex;
-    flex:2;
-
-}
-
-.gallery {
-    display: grid;
-    width: 100%;
-    gap: 8px;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-}
-
-.wrapper {
+.services-about {
     display: flex;
     flex-direction: column;
+    flex: 1;
+    padding: 0px 32px;
 }
+
+.services-about h1 {
+    font-size: 52px;
+    color: darkslategray;
+    text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.services-wrapper {
+    display: flex;
+    top: 0;
+    flex-direction: row;
+    padding: 80px 32px;
+    height: 100%;
+    z-index: 2;
+    background-attachment: fixed;
+}
+
+.services-wrapper::-webkit-scrollbar {
+    display: none;
+  }
 
 
 .project-image {
-    height: calc((100vh - 120px)/3);
-    width: 100%;;
+    display: flex;
+    flex: 2;
+    width: 100%;
+    height: 100%;
+    background-attachment: scroll;
+}
+
+/* Project */
+#project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.showcase {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #57abc6;
+    margin: 16px 32px;
+    padding: 16px;
+}
+
+.project {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.project-info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.project-description {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
 }
 
 @media screen and (max-width: 1000px) {

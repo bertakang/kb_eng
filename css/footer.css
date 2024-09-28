@@ -1,4 +1,16 @@
 /* footer */
+
+button {
+    font-family: "Albert Sans", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #57abc6;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    color: aliceblue;
+}
+
 #contact {
     margin: 0px 32px 0px 32px;
 }

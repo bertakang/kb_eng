@@ -7,13 +7,6 @@ body {
     width: 100%;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    padding: 32px;
-    align-items: left;
-    justify-content: center;
-}
 
 .img-container {
     height: 100%;
@@ -26,9 +19,7 @@ body {
     object-fit: cover;
 }
 
-.text-wrap {
-    padding: 32px;
-}
+
 
 svg {
     vertical-align: middle;
@@ -39,6 +30,17 @@ p {
     font-family: 'Buenard', serif;
     font-size: 20px;
     line-height: 1.2;
+}
+
+button {
+    font-family: "Albert Sans", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #57abc6;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    color: aliceblue;
 }
 
 
@@ -69,8 +71,24 @@ p {
     height: 100vh;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+}
+
+.about-img-wrapper {
+    display: flex;
+    flex: 1;
 
 }
+
+.about-text-wrapper {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 32px;
+    align-items: left;
+    justify-content: center;
+}
+
 
 /* Services */
 #services {
@@ -86,13 +104,14 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0px 32px;
 }
 
-.services-row {
-    display: flex;
-    flex-direction: row;
-    flex: 1;
-    position: relative;
+.services-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 32px;
     padding: 0px;
     width: 100%;
 }
@@ -102,29 +121,21 @@ p {
     flex: 1;
     align-items: center;
     position: relative;
-    width: 100%;
-    height: 100%;
-
+    padding: 32px;
+    border: 1px #57abc6 solid;
 }
 
 .service-card {
-    display: absolute;
-    top: 0;
-    left: 0;
+    display: flex;
     flex-direction: column;
-    z-index: 578;
     height: 100%;
+    justify-content: space-between;
 }
 
-.service-card-img {
-    display: none;
-    flex: 1;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    z-index: 569;
+.service-button-wrap {
+    display: flex;
+    align-self: flex-end;
 }
-
 
 /* Career */
 #career {
@@ -140,11 +151,12 @@ p {
 #clients {
     display: flex;
     flex-direction: column;
+    height: calc(100vh - 80px);
     width: 100%;
     align-items: center;
     justify-content: center;
     text-align: center;
-    justify-content: center;
+    margin: 64px 0px;
 }
 
 .client-grid {
@@ -154,11 +166,12 @@ p {
     grid-template-rows: 1fr 1fr;
     gap: 24px;
     row-gap: 64px;
+    margin: 64px 0px;
 }
 
 .client {
     display: flex;
-    height: 128px;
+    height: 200px;
     width: auto;
     align-items: center;
     justify-content: center;
