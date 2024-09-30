@@ -22,7 +22,7 @@ document.addEventListener("scroll", function () {
     const scrollY = window.scrollY;
   
     const serviceButtons = document.querySelectorAll(".service-button-wrap button");
-    const borderPaths = document.querySelectorAll("path");
+    const borderPaths = document.querySelectorAll(".border-path");
 
     borderPaths.forEach((path) => {
         const pathLength = path.getTotalLength();
@@ -69,13 +69,11 @@ document.addEventListener("scroll", function () {
             const pathLength = path.getTotalLength();
             anime({
             targets: path,
-            strokeDashoffset: pathLength * (1 - scrollPercentage), 
+            strokeDashoffset:  0.7 * pathLength * (1 -scrollPercentage), 
             easing: "easeInOutSine",
             duration: 0,
             loop: true,
-            // complete: function() {
-            //     scrollPercentage == 100%;
-            // }
+
             });
         });
 
@@ -91,13 +89,10 @@ document.addEventListener("scroll", function () {
             const pathLength = path.getTotalLength();
             anime({
             targets: path,
-            strokeDashoffset: pathLength * (scrollPercentage), 
+            strokeDashoffset: pathLength * (1 - scrollPercentage), 
             easing: "easeInOutSine",
+            
             duration: 0,
-            // complete: function() {
-            //     // Optional: reset stroke dash for re-animation
-            //     scrollPercentage == 100%;
-            // }
             });
         });
       }

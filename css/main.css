@@ -103,8 +103,8 @@ button {
     display: flex;
     position: relative;
     flex-direction: column;
-    padding-top: 80px;
-
+    padding: 80px 0px;
+    min-height: 100vh;
 }
 
 .services-wrapper {
@@ -169,11 +169,12 @@ button {
     display: flex;
     flex-direction: column;
     height: calc(100vh - 80px);
-    width: 100%;
+    width: auto;
     align-items: center;
     justify-content: center;
     text-align: center;
     margin: 64px 0px;
+    padding: 0px 32px;
 }
 
 .client-grid {
@@ -192,7 +193,6 @@ button {
     width: auto;
     align-items: center;
     justify-content: center;
-
 }
 
 .client-img {
