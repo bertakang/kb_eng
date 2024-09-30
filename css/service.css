@@ -53,7 +53,6 @@ hr {
 }
 
 
-/* service */
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -100,6 +99,7 @@ width: 33%;
 .services-about {
     display: flex;
     flex-direction: column;
+
     flex: 1;
     padding: 0px 32px;
 }
@@ -118,6 +118,7 @@ width: 33%;
     height: 100%;
     z-index: 2;
     background-attachment: fixed;
+
 }
 
 .services-wrapper::-webkit-scrollbar {
@@ -167,20 +168,26 @@ width: 33%;
     flex: 2;
 }
 
-@media screen and (max-width: 1000px) {
-    .gallery {
-        grid-template-columns: 1fr 1fr ;
-        grid-template-rows: auto;
+@media screen and (max-width: 1440px) {
+    .services-about-wrapper {
+        flex-direction: column;
+        height: 100%;
     }
 
     .services-wrapper {
         flex-direction: column;
     }
+
+    .services-column {
+        width: 100%;
+        z-index: 2;
+    }
+
+    .project {
+        flex-direction: column;
+    }
 }
 
-@media screen and (max-width: 667px) {
-    .gallery {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-    }
+@media screen and (max-width: 768px) {
+
 }
