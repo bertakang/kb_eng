@@ -4,7 +4,8 @@ body {
     font-family: 'Albert Sans', sans-serif;
     color: darkslategray;
     margin: 0px;
-    width: 100%;
+    overflow-x: hidden;
+
 }
 
 
@@ -19,11 +20,10 @@ body {
     object-fit: cover;
 }
 
-
-
 svg {
     vertical-align: middle;
     margin-left: 4px;
+    z-index: 0;
 }
 
 p {
@@ -41,6 +41,7 @@ button {
     border: none;
     border-radius: 6px;
     color: aliceblue;
+    z-index: 1000;
 }
 
 
@@ -49,7 +50,13 @@ button {
     display: flex;
     height: 100vh;
     align-items: center;
+}
 
+.scroll-section {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    z-index: 0;
 }
 
 .intro {
@@ -60,6 +67,7 @@ button {
     font-size: 86px;
     color: aliceblue;
     text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.5);
+    z-index:560;
 }
 
 
@@ -122,7 +130,8 @@ button {
     align-items: center;
     position: relative;
     padding: 32px;
-    border: 1px #57abc6 solid;
+
+
 }
 
 .service-card {
@@ -136,6 +145,14 @@ button {
     display: flex;
     align-self: flex-end;
 }
+
+.border {
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+
 
 /* Career */
 #career {

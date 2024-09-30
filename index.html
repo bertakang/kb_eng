@@ -20,19 +20,19 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
-    <script src="js/main.js" defer></script> <!-- Link to your JavaScript file -->
+
 
     <!--animeJS CDN-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"
         integrity="sha512-aNMyYYxdIxIaot0Y1/PLuEu3eipGCmsEUBrUq+7aVyPGMFH8z0eTP0tkqAvv34fzN6z+201d3T8HPb1svWSKHQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Buenard:wght@400;700&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
@@ -103,7 +103,7 @@
         </div>
     </div>
     <main>
-        <section id="home">
+        <section id="home" class="scroll-section">
             <div class="intro">
                 <h1>Building a Stronger Cambodia.</h1>
             </div>
@@ -111,7 +111,7 @@
                 <img class="img" src="assets/services/solar/solar2.png">
             </div>
         </section>
-        <section id="about">
+        <section id="about" class="scroll-section">
             <div class="about-img-wrapper">
                 <img class="img" src="assets/services/solar/solar.PNG">
             </div>
@@ -126,8 +126,11 @@
         <section id="services">
             <div class="services-wrapper">
                 <h2>Our Services</h2>
-                <ul class="services-grid">
+                <ul class="services-grid grid">
                     <div class="service-container">
+                        <svg class="border" viewBox="0 0 100 100" width="100%" height="100%" preserveAspectRatio="none">
+                            <path class="border-path-1" d="M0,0 L100,0 L100,100 L0,100 Z" fill="none" stroke="#57abc6" stroke-width="1" />
+                        </svg>
                         <div class="service-card">
                             <div class="text-wrap">
                                 <h3>Mobile App and Web Design & Development</h3>
@@ -142,6 +145,9 @@
                         </div>
                     </div>
                     <div class="service-container">
+                        <svg class="border" viewBox="0 0 100 100" width="100%" height="100%" preserveAspectRatio="none">
+                            <path class="border-path-2" d="M0,0 L100,0 L100,100 L0,100 Z" fill="none" stroke="#57abc6" stroke-width="1" />
+                        </svg>
                         <div class="service-card">
                             <div class="text-wrap">
                                 <h3>Groundwater Surveying</h3>
@@ -160,6 +166,9 @@
                         </div>
                     </div>
                     <div class="service-container">
+                        <svg class="border" viewBox="0 0 100 100" width="100%" height="100%" preserveAspectRatio="none">
+                            <path class="border-path-3" d="M0,0 L100,0 L100,100 L0,100 Z" fill="none" stroke="#57abc6" stroke-width="1" />
+                        </svg>
                         <div class="service-card">
                             <div class="text-wrap">
                                 <h3>Land Surveying</h3>
@@ -173,6 +182,9 @@
                         </div>
                     </div>
                     <div class="service-container">
+                        <svg class="border" viewBox="0 0 100 100" width="100%" height="100%" preserveAspectRatio="none">
+                            <path class="border-path-4" d="M0,0 L100,0 L100,100 L0,100 Z" fill="none" stroke="#57abc6" stroke-width="1" />
+                        </svg>
                         <div class="service-card">
                             <div class="text-wrap">
                                 <h3>Solar Design and Installation Services</h3>
@@ -181,11 +193,15 @@
                                     performance and ensure safety in construction projects.</p>
                             </div>
                             <div class="service-button-wrap">
-                                <button>See More ></button>
+                                <button onclick="alert('See More button clicked!')">See More ></button>
+
                             </div>
                         </div>
                     </div>
                     <div class="service-container">
+                        <svg class="border" viewBox="0 0 100 100" width="100%" height="100%" preserveAspectRatio="none">
+                            <path class="border-path-5" d="M0,0 L100,0 L100,100 L0,100 Z" fill="none" stroke="#57abc6" stroke-width="1" />
+                        </svg>
                         <div class="service-card">
                             <div class="text-wrap">
                                 <h3>Groundwater Well Design and Construction</h3>
@@ -201,9 +217,7 @@
                         </div>
                     </div>
                     <div class="service-container">
-
                     </div>
-
                 </ul>
             </div>
         </section>
@@ -235,8 +249,8 @@
 
         <section id="career">
 
-                <h2>Career</h2>
-                <p>KB Engineering is not currently hiring.</p>
+            <h2>Career</h2>
+            <p>KB Engineering is not currently hiring.</p>
 
 
         </section>
@@ -255,7 +269,7 @@
                         <div class="address-column-wrapper">
                             <div class="address">
                                 <div class="address">
-                                    <h3>KB Engineering</h3>
+                                    <h3>Address</h3>
                                     <p><i>Main Office</i><br>
                                         St 566
                                         <br>
@@ -266,61 +280,54 @@
                             <div class="address">
                                 <h3>Phone</h3>
                                 <p>+855 16-814-906</p>
-
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="email-wrapper">
-                        <div class="email-wrapper-1">
-                            <div class="email">
-                                <h3>Kimkel Kang</h3>
-                                <button>
-                                    <a href="mailto:RLogoluso@bariproduce.com">Email</a>
-                                </button>
-                            </div>
-                            <div class="email">
-                                <h3>Kim Sros</h3>
-                                <button>
-                                    <a href="mailto:JBedwell@bariproduce.com">Email</a>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="email-wrapper-2">
-                            <div class="email">
-                                <h3>Berta Kang</h3>
-                                <button>
-                                    <a href="mailto:JStilwell@bariproduce.com">Email</a>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="work-wrapper">
-                        <h3>Our Portfolio</h3>
-                        <div class="portfolio-wrapper">
-                            <div class="portfolio-column">
-                                <a class="portfolio-link"
-                                    href="https://bertakang.github.io/BARI-Produce-Staging/#home">Mobile & Web
-                                    Development</a>
-                                <a class="portfolio-link"
-                                    href="https://bertakang.github.io/BARI-Produce-Staging/#home">Groundwater
-                                    Surveying</a>
-                                <a class="portfolio-link"
-                                    href="https://bertakang.github.io/BARI-Produce-Staging/#home">Land Surveying</a>
-                            </div>
-                            <div class="portfolio-column">
-                                <a class="portfolio-link"
-                                    href="https://bertakang.github.io/BARI-Produce-Staging/#home">Solar Design &
-                                    Installation</a>
-                                <a class="portfolio-link"
-                                    href="https://bertakang.github.io/BARI-Produce-Staging/#home">Groundwater Well
-                                    Design</a>
-                                <a class="portfolio-link"
-                                    href="https://bertakang.github.io/BARI-Produce-Staging/#home">Bored Pile Design</a>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="email-wrapper">
+                    <div class="email-wrapper-1">
+                        <div class="email">
+                            <h3>Kimkel Kang</h3>
+                            <button onclick="window.location.href='mailto:JBedwell@bariproduce.com'">Email</button>
+                        </div>
+                        <div class="email">
+                            <h3>Kim Sros</h3>
+                            <button onclick="window.location.href='mailto:JBedwell@bariproduce.com'">Email</button>
+                        </div>
+                    </div>
+                    <div class="email-wrapper-2">
+                        <div class="email">
+                            <h3>Berta Kang</h3>
+                            <button onclick="window.location.href='mailto:JBedwell@bariproduce.com'">Email</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-wrapper">
+                    <h3>Our Portfolio</h3>
+                    <div class="portfolio-wrapper">
+                        <div class="portfolio-column">
+                            <a class="portfolio-link"
+                                href="https://bertakang.github.io/BARI-Produce-Staging/#home">Mobile & Web
+                                Development</a>
+                            <a class="portfolio-link"
+                                href="https://bertakang.github.io/BARI-Produce-Staging/#home">Groundwater
+                                Surveying</a>
+                            <a class="portfolio-link" href="https://bertakang.github.io/BARI-Produce-Staging/#home">Land
+                                Surveying</a>
+                        </div>
+                        <div class="portfolio-column">
+                            <a class="portfolio-link"
+                                href="https://bertakang.github.io/BARI-Produce-Staging/#home">Solar Design &
+                                Installation</a>
+                            <a class="portfolio-link"
+                                href="https://bertakang.github.io/BARI-Produce-Staging/#home">Groundwater Well
+                                Design</a>
+                            <a class="portfolio-link"
+                                href="https://bertakang.github.io/BARI-Produce-Staging/#home">Bored Pile Design</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
@@ -346,7 +353,7 @@
             </div>
         </div>
     </footer>
-
+    <script src="js/main.js" defer></script> <!-- Link to your JavaScript file -->
 </body>
 
 </html>
