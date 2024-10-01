@@ -4,6 +4,29 @@ var dropdownContent = document.querySelector(".dropdown-content");
 var hamburger = document.querySelector(".hamburger");
 var navigation = document.querySelector(".header-center"); // Assuming this is the navigation
 
+
+// Hover functionality for desktop view (for larger screens)
+dropdown.addEventListener("mouseenter", function () {
+  if (!mediaQuery.matches) { // Apply hover only on desktop
+    dropdownContent.style.display = "flex";
+  }
+});
+
+dropdown.addEventListener("click", function () {
+  if (!mediaQuery.matches) { // Apply hover only on desktop
+    dropdownContent.style.display = "none";
+  }
+});
+
+
+// Close dropdown if clicked outside
+document.addEventListener("click", function (event) {
+  // Check if the click is outside the dropdown
+  if (!dropdown.contains(event.target)) {
+    dropdownContent.style.display = "none";
+  }
+});
+
 // Function to add event listeners for mobile view (768px and below)
 function setupMobileNavigation() {
   // Dropdown toggle on click for mobile
@@ -44,20 +67,7 @@ mediaQuery.addListener(function (e) {
   }
 });
 
-// Hover functionality for desktop view (for larger screens)
-dropdown.addEventListener("mouseenter", function () {
-  if (!mediaQuery.matches) { // Apply hover only on desktop
-    dropdownContent.style.display = "flex";
-  }
-});
 
-// Close dropdown if clicked outside
-document.addEventListener("click", function (event) {
-  // Check if the click is outside the dropdown
-  if (!dropdown.contains(event.target)) {
-    dropdownContent.style.display = "none";
-  }
-});
 
 //animeJS functionality
 document.addEventListener("scroll", function () {
