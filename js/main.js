@@ -1,18 +1,61 @@
+// Select elements
 var dropdown = document.querySelector(".dropdown");
-var dropdownContent = document.querySelector(".dropdown-content"); // Move this outside
+var dropdownContent = document.querySelector(".dropdown-content");
+var hamburger = document.querySelector(".hamburger");
+var navigation = document.querySelector(".header-center"); // Assuming this is the navigation
 
-//dropdown functionality
-dropdown.addEventListener("mouseenter", function () {
-  if (dropdownContent) {
-    dropdownContent.style.display = "block";
+// Function to add event listeners for mobile view (768px and below)
+function setupMobileNavigation() {
+  // Dropdown toggle on click for mobile
+  dropdown.addEventListener("click", function () {
+    if (dropdownContent.style.display === "flex") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "flex";
+    }
+  });
+
+  // Hamburger button functionality for mobile
+  hamburger.addEventListener("click", function () {
+    if (navigation.style.display === "flex") {
+      navigation.style.display = "none";
+    } else {
+      navigation.style.display = "flex";
+    }
+  });
+}
+
+// Media query to target screens 768px and below
+var mediaQuery = window.matchMedia("(max-width: 768px)");
+
+// Check if the media query matches the current screen size
+if (mediaQuery.matches) {
+  setupMobileNavigation();
+}
+
+// Add a listener for screen resizing to ensure the script is applied dynamically
+mediaQuery.addListener(function (e) {
+  if (e.matches) {
+    setupMobileNavigation(); // Add event listeners for mobile view
+  } else {
+    // Remove display styles when switching to larger screens
+    dropdownContent.style.display = "";
+    navigation.style.display = "";
   }
 });
 
+// Hover functionality for desktop view (for larger screens)
+dropdown.addEventListener("mouseenter", function () {
+  if (!mediaQuery.matches) { // Apply hover only on desktop
+    dropdownContent.style.display = "flex";
+  }
+});
+
+// Close dropdown if clicked outside
 document.addEventListener("click", function (event) {
+  // Check if the click is outside the dropdown
   if (!dropdown.contains(event.target)) {
-    if (dropdownContent) {
-      dropdownContent.style.display = "none";
-    }
+    dropdownContent.style.display = "none";
   }
 });
 

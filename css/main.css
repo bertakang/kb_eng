@@ -4,6 +4,7 @@ body {
     font-family: 'Albert Sans', sans-serif;
     color: darkslategray;
     margin: 0px;
+    width: 100vw;
     overflow-x: hidden;
 
 }
@@ -50,11 +51,12 @@ button {
     display: flex;
     height: 100vh;
     align-items: center;
+    width: 100%;
 }
 
 .scroll-section {
     display: flex;
-    height: 100vh;
+    min-height: 100vh;
     align-items: center;
     z-index: 0;
 }
@@ -76,7 +78,7 @@ button {
     display: flex;
     position: relative;
     flex-direction: row;
-    height: 100vh;
+    min-height: 100vh;
     align-items: center;
     justify-content: center;
     overflow: hidden;
@@ -85,8 +87,9 @@ button {
 .about-img-wrapper {
     display: flex;
     flex: 1;
-
+    height: 100%;
 }
+
 
 .about-text-wrapper {
     display: flex;
@@ -108,7 +111,7 @@ button {
 }
 
 .services-wrapper {
-    height: calc(100vh - 80px);
+    min-height: calc(100vh - 80px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -168,13 +171,14 @@ button {
 #clients {
     display: flex;
     flex-direction: column;
-    height: calc(100vh - 80px);
+    min-height: calc(100vh - 80px);
     width: auto;
     align-items: center;
     justify-content: center;
     text-align: center;
     margin: 64px 0px;
     padding: 0px 32px;
+    position: relative;
 }
 
 .client-grid {
@@ -199,4 +203,72 @@ button {
     width: auto;
     height: 100%;
     object-fit: contain;
+}
+
+@media screen and (max-width: 1440px) {
+    .intro {
+        font-size: 64px;
+    }
+
+
+
+    .services-grid {
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .client-grid {
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .client {
+        height: auto;
+        width: 100%;
+    }
+
+    .client-img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+
+    .intro {
+        font-size: 48px;
+    }
+
+    #about {
+        flex-direction: column;
+    }
+
+    .about-img-wrapper {
+        width: 100%;
+    }
+  
+    .about-text-wrapper {
+        display: flex;
+        align-items: left;
+        justify-content: top;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    .client-grid {
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        row-gap: 0px;
+    }
+}
+
+@media screen and (max-width: 667px) {
+    .intro {
+        font-size: 36px;
+    }
+    
 }

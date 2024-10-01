@@ -114,16 +114,19 @@ footer {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
     }
+
+    .email-wrapper {
+        flex-direction: column;
+    
+            padding: 0px 0px;
+        }
+    
+        .email {
+            padding: 8px 0px;
+        }
 }
 
 @media screen and (max-width: 768px) {
-    .contact-wrapper {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-    }
-}
-
-@media screen and (max-width: 667px) {
     .contact-wrapper {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -132,18 +135,7 @@ footer {
     .info-wrapper {
         padding: 0px 0px;
     }
-    
-    .email-wrapper {
-        flex-direction: column;
-    }
 
-    .email {
-        padding: 8px 0px;
-    }
-
-    .portfolio-wrapper {
-        flex-direction: column;
-    }
 
     .portfolio-link {
         font-size: 18px;
@@ -154,5 +146,16 @@ footer {
         padding: 0px 0px;
     }
     
+    
+}
+
+@media screen and (max-width: 667px) {
+
+
+    .portfolio-wrapper {
+        flex-direction: column;
+    }
+
+
     
 }
