@@ -126,6 +126,7 @@
     }
 
     .header-center {
+        display: none;
         position: fixed;
         flex-direction: column;
         top: 80px;
