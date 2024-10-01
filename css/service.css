@@ -24,6 +24,12 @@ body {
     overflow: hidden;
 }
 
+.header-right {
+    display: flex;
+    justify-content: center;
+    text-justify: center;
+}
+
 .text-wrap {
     padding: 32px;
 }
@@ -46,7 +52,7 @@ p, li {
 
 hr {
     height: 1px; /* Thickness of the line */
-    background-color: #57abc6; /* Color of the line */
+    background-color: darkslategray;
     border: none; /* Remove default border */
     margin: 20px 0; /* Space above and below the line */
     width: 100%; /* Width of the line */
@@ -148,7 +154,7 @@ width: 33%;
 .showcase {
     display: flex;
     flex-direction: column;
-    border: 1px solid #57abc6;
+    border: 1px solid darkslategray;
     margin: 16px 32px;
     padding: 16px;
 }
@@ -171,12 +177,8 @@ width: 33%;
     flex: 2;
 }
 
-.border {
+.showcase {
     display: flex;
-    position: absolute;
-    top: 0;
-    left: 0;
-    
 }
 
 @media screen and (max-width: 1440px) {

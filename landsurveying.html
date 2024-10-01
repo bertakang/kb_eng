@@ -10,15 +10,19 @@
     <link rel="canonical" href="https://www.kbengineeringltd.com/">
     <title>KB Engineering | Civil Engineering and Mobile & Web Development Services</title>
 
-    <!-- Open Graph meta tags for social media sharing -->
+
     <meta property="og:title" content="KB Engineering | Civil Engineering and Mobile & Web Development Services" />
     <meta property="og:description" content="A brief description of the webpage content for social media." />
     <meta property="og:image" content="https://www.kbengineeringltd.com/image.jpg" />
     <meta property="og:url" content="https://www.kbengineeringltd.com/" />
     <meta property="og:type" content="website" />
 
-    <link rel="stylesheet" href="css/main.css"> <!-- Link to your CSS file -->
-    <script src="js/main.js" defer></script> <!-- Link to your JavaScript file -->
+    <!--style sheets-->
+    <link rel="stylesheet" href="css/service.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+
 
     <!--animeJS CDN-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"
@@ -37,59 +41,13 @@
     <div class="header">
         <a href="#default"><img class="logo" src="assets/logo.png" width="100px" alt="Image Description"></a>
         <div class="header-center">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <div class="dropdown">
-                <a href="#services" class="dropbtn">Services</a>
-            </div>
-            <a href="#career">Career</a>
+            <a href="#intro">Intro</a>
+            <a href="#services">Services</a>
+            <a href="#project">Project</a>
             <a href="#contact">Contact</a>
         </div>
-        <div class="dropdown-content">
-            <div class="row">
-                <div class="column">
-                    <h3>Mobile & Web Development</h3>
-                    <h4><i>Mobile Projects</i></h4>
-                    <a href="#">Panyavon | Khmer Language App</a>
-                    <h4><i>Web Projects</i></h4>
-                    <a href="#">Rapid Technologies</a>
-                    <a href="#">Bari Produce</a>
-                </div>
-                <div class="column">
-                    <h3>Groundwater Surveying</h3>
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                </div>
-                <div class="column">
-                    <h3>Land Surveying</h3>
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                </div>
-                <div class="column">
-                    <h3>Solar Design & Installation</h3>
-                    <a href="#">Baby Bird Farm</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                </div>
-                <div class="column">
-                    <h3>Groundwater Well Design & Construction</h3>
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                </div>
-                <div class="column">
-                    <h3>Bored Pile Design & Construction</h3>
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                </div>
-                
-            </div>
-        </div>
         <div class="header-right">
-            <a>Language<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+            <a>Language <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
                     <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                         stroke-width="1.5">
                         <path d="M2 12c0 5.523 4.477 10 10 10s10-4.477 10-10S17.523 2 12 2S2 6.477 2 12" />
@@ -100,137 +58,47 @@
         </div>
     </div>
     <main>
-        <section id="home">
-            <div class="intro">
-                <h1>Building a Stronger Cambodia.</h1>
+        <section id="intro" class="scroller">
+            <div class="project-image">
+                <img class="img" src="assets/services/solar/18solarpanel2.jpg">
             </div>
-            <div class="img-container">
-                <img class="img" src="assets/KB Company Profile/2. Solar energy/photo_2024-09-25_17-12-29.jpg">
-            </div>
-        </section>
-        <section id="about">
-
-            <img class="img"
-                src="assets/KB Company Profile/5. Groundwater well drilling and submersible pump installation/Well drilling machine.jpg">
-            <div class="container">
-                <h2>About Us</h2>
-                <p>KB ENGINEERING Co., LTD is a trusted civil engineering firm based in Cambodia specializing in a wide
-                    range of high-quality engineering services. Founded in 2012 by a team of engineers with over 20
-                    years of experience, we have been committed to delivering innovative solutions across various
-                    industries. </p>
+            <div class="services-about">
+                <h1>Land Surveying</h1>
+                <p>At KB ENGINEERING CO., LTD., we offer comprehensive land surveying services that provide essential
+                    data for project planning and development. Our expert team utilizes advanced techniques and technologies to
+                    deliver accurate and reliable measurements, ensuring informed decision-making for various construction and
+                    engineering projects.</p>
             </div>
         </section>
         <section id="services">
             <div class="services-wrapper">
-                <h2>Our Services</h2>
-                <ul class="services-row">
-                    <div class="service-container">
-                        <div class="service-card">
-                            <div class="text-wrap">
-                                <h3>Mobile App and Web Design & Development</h3>
-                                <p>We deliver seamless, custom-built digital solutions that enhance operational
-                                    efficiency
-                                    and
-                                    user engagement for both static and dynamic mobile and web applications.</p>
-                            </div>
-                        </div>
-                        <div class="service-card-img">
-                            <img class="img"
-                                src="assets/KB Company Profile/2. Solar energy/photo_2024-09-25_17-12-29.jpg">
-                        </div>
-                    </div>
-                    <div class="service-container">
-                        <div class="service-card">
-                            <div class="text-wrap">
-                                <h3>Groundwater Surveying</h3>
-                                <p>Using advanced techniques, we conduct detailed groundwater investigations and echo
-                                    sounding
-                                    surveys to assess water availability, quality, and underwater terrain. These
-                                    services
-                                    are
-                                    critical for environmental sustainability, marine construction, and resource
-                                    management.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="service-card-img">
-                            <img class="img"
-                                src="assets/KB Company Profile/2. Solar energy/photo_2024-09-25_17-12-29.jpg">
-                        </div>
-                    </div>
-                    <div class="service-container">
-                        <div class="service-card">
-                            <div class="text-wrap">
-                                <h3>Land Surveying</h3>
-                                <p>Our precise land surveying services offer critical data for project planning and
-                                    development,
-                                    providing accurate measurements for boundary and topographic assessments.</p>
-                            </div>
-                        </div>
-                        <div class="service-card-img">
-                            <img class="img"
-                                src="assets/KB Company Profile/2. Solar energy/photo_2024-09-25_17-12-29.jpg">
-                        </div>
-                    </div>
-                </ul>
-                <ul class="services-row">
-                    <div class="service-container">
-                        <div class="service-card">
-                            <div class="text-wrap">
-                                <h3>Solar Design and Installation Services</h3>
-                                <p>Our team offers reliable electrical system designs and precise load analysis to
-                                    optimize
-                                    performance and ensure safety in construction projects.</p>
-                            </div>
-                        </div>
-                        <div class="service-card-img">
-                            <img class="img"
-                                src="assets/KB Company Profile/2. Solar energy/photo_2024-09-25_17-12-29.jpg">
-                        </div>
-                    </div>
-                    <div class="service-container">
-                        <div class="service-card">
-                            <div class="text-wrap">
-                                <h3>Groundwater Well Design and Construction</h3>
-                                <p>With extensive experience in water resources, we design and construct groundwater
-                                    wells
-                                    tailored to specific site conditions, ensuring efficient and sustainable water
-                                    usage.
-                                </p>
-                            </div>
-
-                        </div>
-                        <div class="service-card-img">
-                            <img class="img"
-                                src="assets/KB Company Profile/2. Solar energy/photo_2024-09-25_17-12-29.jpg">
-                        </div>
-                    </div>
-                    <div class="service-container">
-                        <div class="service-card">
-                            <div class="text-wrap">
-                                <h3>Bored Pile Design & Construction</h3>
-                                <p>Our bore piled engineering services support deep foundation construction and
-                                    geotechnical
-                                    assessments, utilizing state-of-the-art equipment for accurate drilling and data
-                                    collection,
-                                    ensuring stability for local infrastructure projects.</p>
-                            </div>
-
-                        </div>
-                        <div class="service-card-img">
-                            <img class="img"
-                                src="assets/KB Company Profile/2. Solar energy/photo_2024-09-25_17-12-29.jpg">
-                        </div>
-                    </div>
-                </ul>
+                <div class="service-description">
+                    <div class="display-text">Our Services</div>
+                </div>
+                <div class="services-column">
+                    <li class="service-container">
+                        <strong>Detailed Site Assessments</strong> We conduct thorough site assessments to gather critical information about
+                        topography, boundaries, and existing conditions, enabling precise project planning and execution.
+                    </li>
+                    <li class="service-container">
+                        <strong>Pilot Drilling and Sampling</strong> As part of our surveying process, we perform pilot drilling to sample soil
+                        and rock materials. This helps in determining the depth of various geological layers and obtaining
+                        dynamic and static elevation data.
+                    </li>
+                    <li class="service-container">
+                        <strong>Advanced Survey Techniques</strong> We employ a range of modern surveying methods, including GPS and
+                        total station technology, to ensure high accuracy in measurements and mapping. Our team is skilled in
+                        handling complex terrain and various environmental conditions.
+                    </li>
+                    <li class="service-container">
+                        <strong>Geophysical Investigations</strong> In addition to traditional surveying methods, we utilize geophysical
+                        techniques to gain insights into subsurface conditions, aiding in the identification of suitable sites for
+                        construction and development.
+                    </li>
+                   
+                </div>
             </div>
-        </section>
-        <section id="career">
-            <div class="container">
-                <h2>Career</h2>
-                <p>Write something about your business or website here. Highlight your mission, values, or history.</p>
             </div>
-
         </section>
         <section id="contact">
             <div class="contact-wrapper">
@@ -247,7 +115,7 @@
                         <div class="address-column-wrapper">
                             <div class="address">
                                 <div class="address">
-                                    <h3>KB Engineering</h3>
+                                    <h3>Address</h3>
                                     <p><i>Main Office</i><br>
                                         St 566
                                         <br>
@@ -258,61 +126,54 @@
                             <div class="address">
                                 <h3>Phone</h3>
                                 <p>+855 16-814-906</p>
-
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="email-wrapper">
-                        <div class="email-wrapper-1">
-                            <div class="email">
-                                <h3>Kimkel Kang</h3>
-                                <button>
-                                    <a href="mailto:RLogoluso@bariproduce.com">Email</a>
-                                </button>
-                            </div>
-                            <div class="email">
-                                <h3>Kim Sros</h3>
-                                <button>
-                                    <a href="mailto:JBedwell@bariproduce.com">Email</a>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="email-wrapper-2">
-                            <div class="email">
-                                <h3>Berta Kang</h3>
-                                <button>
-                                    <a href="mailto:JStilwell@bariproduce.com">Email</a>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="work-wrapper">
-                        <h3>Our Portfolio</h3>
-                        <div class="portfolio-wrapper">
-                            <div class="portfolio-column">
-                                <a class="portfolio-link"
-                                    href="https://bertakang.github.io/BARI-Produce-Staging/#home">Mobile & Web
-                                    Development</a>
-                                <a class="portfolio-link"
-                                    href="https://bertakang.github.io/BARI-Produce-Staging/#home">Groundwater
-                                    Surveying</a>
-                                <a class="portfolio-link"
-                                    href="https://bertakang.github.io/BARI-Produce-Staging/#home">Land Surveying</a>
-                            </div>
-                            <div class="portfolio-column">
-                                <a class="portfolio-link"
-                                    href="https://bertakang.github.io/BARI-Produce-Staging/#home">Solar Design &
-                                    Installation</a>
-                                <a class="portfolio-link"
-                                    href="https://bertakang.github.io/BARI-Produce-Staging/#home">Groundwater Well
-                                    Design</a>
-                                <a class="portfolio-link"
-                                    href="https://bertakang.github.io/BARI-Produce-Staging/#home">Bored Pile Design</a>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="email-wrapper">
+                    <div class="email-wrapper-1">
+                        <div class="email">
+                            <h3>Kimkel Kang</h3>
+                            <button onclick="window.location.href='mailto:JBedwell@bariproduce.com'">Email</button>
+                        </div>
+                        <div class="email">
+                            <h3>Kim Sros</h3>
+                            <button onclick="window.location.href='mailto:JBedwell@bariproduce.com'">Email</button>
+                        </div>
+                    </div>
+                    <div class="email-wrapper-2">
+                        <div class="email">
+                            <h3>Berta Kang</h3>
+                            <button onclick="window.location.href='mailto:JBedwell@bariproduce.com'">Email</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-wrapper">
+                    <h3>Our Portfolio</h3>
+                    <div class="portfolio-wrapper">
+                        <div class="portfolio-column">
+                            <a class="portfolio-link"
+                                href="https://bertakang.github.io/BARI-Produce-Staging/#home">Mobile & Web
+                                Development</a>
+                            <a class="portfolio-link"
+                                href="https://bertakang.github.io/BARI-Produce-Staging/#home">Groundwater
+                                Surveying</a>
+                            <a class="portfolio-link" href="https://bertakang.github.io/BARI-Produce-Staging/#home">Land
+                                Surveying</a>
+                        </div>
+                        <div class="portfolio-column">
+                            <a class="portfolio-link"
+                                href="https://bertakang.github.io/BARI-Produce-Staging/#home">Solar Design &
+                                Installation</a>
+                            <a class="portfolio-link"
+                                href="https://bertakang.github.io/BARI-Produce-Staging/#home">Groundwater Well
+                                Design</a>
+                            <a class="portfolio-link"
+                                href="https://bertakang.github.io/BARI-Produce-Staging/#home">Bored Pile Design</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
@@ -326,8 +187,7 @@
                     that is provided to KB Engineering; KB Engineering does not sell, give, or trade any information to
                     any third
                     parties for data-mining, marketing, or any other purpose. Your privacy is of the utmost concern to
-                    Bari
-                    Produce. The information on our website, and any information we solicit from you, or that you
+                    KB Engineering. The information on our website, and any information we solicit from you, or that you
                     provide to us in
                     response to what you may read on our website, is not intended as an offer to sell, or the
                     solicitation of an
@@ -338,7 +198,7 @@
             </div>
         </div>
     </footer>
-
+    <script src="js/service.js" defer></script> <!-- Link to your JavaScript file -->
 </body>
 
 </html>
