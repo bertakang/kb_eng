@@ -4,9 +4,9 @@ body {
     font-family: 'Albert Sans', sans-serif;
     color: darkslategray;
     margin: 0px;
-    width: 100vw;
-    overflow-x: hidden;
-
+    scrollbar-gutter: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -52,6 +52,7 @@ button {
     height: 100vh;
     align-items: center;
     width: 100%;
+    overflow-x: hidden;
 }
 
 .scroll-section {
@@ -59,6 +60,7 @@ button {
     min-height: 100vh;
     align-items: center;
     z-index: 0;
+
 }
 
 .intro {
@@ -235,9 +237,9 @@ button {
 }
 
 @media screen and (max-width: 768px) {
-
-
     .intro {
+        padding: 16px;
+        width: 100%;
         font-size: 48px;
     }
 
@@ -253,17 +255,31 @@ button {
         display: flex;
         align-items: left;
         justify-content: top;
+        padding: 16px;
+    }
+
+    .services-wrapper {
+        margin: 0px 16px;
     }
 
     .services-grid {
         grid-template-columns: 1fr ;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     }
+
+    #clients {
+        padding: 0px 16px;
+    }
+
     .client-grid {
         grid-template-columns: 1fr ;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
         row-gap: 0px;
     }
+
+
+
+
 }
 
 @media screen and (max-width: 667px) {

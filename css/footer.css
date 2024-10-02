@@ -145,7 +145,14 @@ footer {
     .work-wrapper {
         padding: 0px 0px;
     }
+
+    #contact {
+        margin: 0px 16px;
+    }
     
+    footer {
+        padding: 0px 16px;
+    }
     
 }
 
