@@ -127,17 +127,14 @@ document.addEventListener("scroll", function () {
         };
 
         borderPaths.forEach((path) => {
-            const pathLength = path.getTotalLength();
-            anime({
+          const pathLength = path.getTotalLength();
+    
+          anime({
             targets: path,
-            strokeDashoffset:  0.7 * pathLength * (1 -scrollPercentage), 
-            easing: "easeInOutSine",
+            strokeDashoffset: pathLength * (1 - scrollPercentage),  // Reveal path based on scroll
             duration: 0,
-            loop: true,
-
-            });
+          });
         });
-
 
       } else if (scrollY < sectionTop) {
         anime({
@@ -147,22 +144,31 @@ document.addEventListener("scroll", function () {
         });
 
         anime({
-          targets: section.querySelector(".about-img-wrapper"),
+          targets: section.querySelector(".about-img-container"),
           translateX: "0vw",
           duration: 50,
         });
 
         borderPaths.forEach((path) => {
-            const pathLength = path.getTotalLength();
-            anime({
+          const pathLength = path.getTotalLength();
+          anime({
             targets: path,
-            strokeDashoffset: pathLength * (1 - scrollPercentage), 
-            easing: "easeInOutSine",
-            
+            strokeDashoffset: pathLength,  // Hide the path completely
             duration: 0,
-            });
+          });
         });
+
+      } else if (sectionTop < scrollY) {
+        borderPaths.forEach((path) => {
+          const pathLength = path.getTotalLength();
+          anime({
+          targets: path,
+          strokeDashoffset: 0, 
+          duration: 0,
+          });
+      });
       }
+
     });
   });
   
