@@ -73,6 +73,9 @@ mediaQuery.addListener(function (e) {
 document.addEventListener("scroll", function () {
     const sections = document.querySelectorAll(".scroll-section");
     const scrollY = window.scrollY;
+    var mediaQuery = window.matchMedia("(max-width: 768px)");
+    var about = document.querySelector(".about-text-wrapper");
+
   
     const serviceButtons = document.querySelectorAll(".service-button-wrap button");
     const borderPaths = document.querySelectorAll(".border-path");
@@ -111,13 +114,17 @@ document.addEventListener("scroll", function () {
           opacity: Math.max(0, 1 - scrollPercentage * 2.5),
           duration: 300,
         });
-  
-        anime({
-          targets: section.querySelector(".about-text-wrapper"),
-          opacity: Math.max(0, 1 - scrollPercentage * 2.5),
-          duration: 300,
-        });
-  
+
+        if (mediaQuery.matches) {
+          about.style.opacity = "1";
+        } else {
+          anime({
+            targets: section.querySelector(".about-text-wrapper"),
+            opacity: Math.max(0, 1 - scrollPercentage * 2.5),
+            duration: 300,
+          });
+        };
+
         borderPaths.forEach((path) => {
             const pathLength = path.getTotalLength();
             anime({
