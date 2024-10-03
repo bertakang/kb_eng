@@ -144,7 +144,7 @@ document.addEventListener("scroll", function () {
         });
 
         anime({
-          targets: section.querySelector(".about-img-container"),
+          targets: section.querySelector(".about-img-wrapper"),
           translateX: "0vw",
           duration: 50,
         });
