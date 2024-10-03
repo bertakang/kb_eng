@@ -183,14 +183,28 @@ document.addEventListener("scroll", function () {
         easing: 'easeInOutQuad' // Stagger the animation
       });
       menuOpen = true;  // Set the state to open
+      menuItems.forEach(function(menuItem) {
+        menuItem.addEventListener("click", function() {
+          navigation.style.display = "none";
+          anime({
+            targets: menuItems,
+            translateX: 0,        // Move 270px to the right
+            delay: anime.stagger(100),
+            easing: 'easeInOutQuad' // Stagger the animation
+          });
+        });
+      });
     } else {
       // Menu is open, so animate to hide items back off-screen
+      menuOpen = false;  // Set the state to closed
       anime({
         targets: menuItems,
-        translateX: 0,          // Move back to initial position
+        translateX: 270,        // Move 270px to the right
         delay: anime.stagger(100),
         easing: 'easeInOutQuad' // Stagger the animation
       });
-      menuOpen = false;  // Set the state to closed
     }
   });
+
+
+

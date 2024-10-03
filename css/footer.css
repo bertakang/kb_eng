@@ -20,7 +20,7 @@ button:hover {
 
 .nav-link {
     font-size: 22px;
-    color: black;
+    color: darkslategray;
 }
 
 .contact-wrapper {
@@ -129,7 +129,7 @@ footer {
 @media screen and (max-width: 768px) {
     .contact-wrapper {
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 2fr 2fr 2fr;
     }
 
     .info-wrapper {

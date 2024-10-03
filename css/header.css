@@ -104,13 +104,30 @@
 
     html, body {
         max-width: 100vw;
-        overflow-x: hidden;
+       
         }
+
     .hamburger {
         display:flex;
+
         background-color: aliceblue;   
+        
     }
+
+    .language-text {
+        display: none;
+      }
     
+      .service-container {
+        padding: 24px;
+        margin: 0;
+      }
+      
+      svg.border {
+        padding: 0;
+        margin: 0;
+        display: block; /* Ensures there's no extra space around the SVG */
+      }
 
     .header {
         background-color: aliceblue;
@@ -120,18 +137,18 @@
         position: fixed;
         top: 0;
         width: 100vw;
-        height: 80px;
+        height: 64px;
         z-index: 10000;
-        overflow-x: hidden;
+       
     }
 
     .header-center {
         display: none;
         position: fixed;
         flex-direction: column;
-        top: 80px;
+        top: 64px;
         left: 0px;
-        height: calc(100vh - 80px);
+        height: calc(100vh - 64px);
         width: 100vw;
         justify-content: start;
         overflow-y: auto;
@@ -147,7 +164,7 @@
 
     .menu-item {
         position: relative;  /* or 'absolute' if needed */
-  left: -270px;      
+        left: -270px;      
       
         
     }
