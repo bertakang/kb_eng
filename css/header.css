@@ -135,7 +135,7 @@
         width: 100vw;
         justify-content: start;
         overflow-y: auto;
-        background: aliceblue;
+        background-color: aliceblue;
     }
 
     .header a {
@@ -143,6 +143,13 @@
         justify-content: end;
         align-items: center;
         right: 0;
+    }
+
+    .menu-item {
+        position: relative;  /* or 'absolute' if needed */
+  left: -270px;      
+      
+        
     }
 
     .dropdown {

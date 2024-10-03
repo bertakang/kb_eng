@@ -3,8 +3,8 @@ var dropdown = document.querySelector(".dropdown");
 var dropdownContent = document.querySelector(".dropdown-content");
 var hamburger = document.querySelector(".hamburger");
 var navigation = document.querySelector(".header-center"); // Assuming this is the navigation
-
-
+var menuItems = document.querySelectorAll(".menu-item");
+let menuOpen = false;  
 // Hover functionality for desktop view (for larger screens)
 dropdown.addEventListener("mouseenter", function () {
   if (!mediaQuery.matches) { // Apply hover only on desktop
@@ -96,6 +96,7 @@ document.addEventListener("scroll", function () {
       if (scrollY >= sectionTop && scrollY < sectionBottom) {
         const scrollPercentage = (scrollY - sectionTop) / sectionHeight;
         const translateX = scrollPercentage * 100;
+        
   
         anime({
           targets: section.querySelector(".img-container"),
@@ -106,7 +107,7 @@ document.addEventListener("scroll", function () {
         anime({
           targets: section.querySelector(".about-img-wrapper"),
           translateX: `-${translateX}%`,
-          duration: 50,
+          duration: 100,
         });
   
         anime({
@@ -145,6 +146,12 @@ document.addEventListener("scroll", function () {
           duration: 50,
         });
 
+        anime({
+          targets: section.querySelector(".about-img-wrapper"),
+          translateX: "0vw",
+          duration: 50,
+        });
+
         borderPaths.forEach((path) => {
             const pathLength = path.getTotalLength();
             anime({
@@ -159,3 +166,25 @@ document.addEventListener("scroll", function () {
     });
   });
   
+
+  hamburger.addEventListener("click", function() {
+    if (!menuOpen) {
+      // Menu is closed, so animate to bring items into view
+      anime({
+        targets: menuItems,
+        translateX: 270,        // Move 270px to the right
+        delay: anime.stagger(100),
+        easing: 'easeInOutQuad' // Stagger the animation
+      });
+      menuOpen = true;  // Set the state to open
+    } else {
+      // Menu is open, so animate to hide items back off-screen
+      anime({
+        targets: menuItems,
+        translateX: 0,          // Move back to initial position
+        delay: anime.stagger(100),
+        easing: 'easeInOutQuad' // Stagger the animation
+      });
+      menuOpen = false;  // Set the state to closed
+    }
+  });

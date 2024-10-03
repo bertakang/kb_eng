@@ -8,7 +8,6 @@ body {
     flex-direction: column;
 }
 
-
 .img-container {
     height: 100vh;
     width: 100%;
@@ -44,8 +43,7 @@ button {
     z-index: 1000;
 }
 
-
-/* Home */
+/* home */
 #home {
     display: flex;
     height: 100vh;
@@ -73,8 +71,7 @@ button {
     z-index:560;
 }
 
-
-/* About */
+/* about */
 #about {
     display: flex;
     position: relative;
@@ -101,8 +98,7 @@ button {
     justify-content: center;
 }
 
-
-/* Services */
+/* services */
 #services {
     display: flex;
     position: relative;
@@ -157,8 +153,7 @@ button {
     
 }
 
-
-/* Career */
+/* career */
 #career {
     display: flex;
     flex-direction: column;
@@ -168,7 +163,7 @@ button {
 
 }
 
-/* Clients */
+/* clients */
 #clients {
     display: flex;
     flex-direction: column;
@@ -299,10 +294,6 @@ button {
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
         row-gap: 0px;
     }
-
-
-
-
 }
 
 @media screen and (max-width: 667px) {
