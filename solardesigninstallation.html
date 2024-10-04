@@ -29,32 +29,45 @@
         integrity="sha512-aNMyYYxdIxIaot0Y1/PLuEu3eipGCmsEUBrUq+7aVyPGMFH8z0eTP0tkqAvv34fzN6z+201d3T8HPb1svWSKHQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+    <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Buenard:wght@400;700&display=swap" rel="stylesheet">
-
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <div class="header">
         <a href="#default"><img class="logo" src="assets/logo.png" width="100px" alt="Image Description"></a>
         <div class="header-center">
-            <a href="#intro">Intro</a>
-            <a href="#services">Services</a>
-            <a href="#project">Project</a>
-            <a href="#contact">Contact</a>
+            <a class="menu-item" href="#intro">Intro</a>
+            <a class="menu-item" href="#services">Services</a>
+            <a class="menu-item" href="#project">Clients</a>
+            <a class="menu-item" href="#contact">Contact</a>
         </div>
         <div class="header-right">
-            <a>Language <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+            <a><span class="language-text">Language</span><svg xmlns="http://www.w3.org/2000/svg" width="auto"
+                    height="24px" viewBox="0 0 24 24">
+                    <g fill="none" stroke="darkslategray" stroke-linecap="round" stroke-linejoin="round"
                         stroke-width="1.5">
                         <path d="M2 12c0 5.523 4.477 10 10 10s10-4.477 10-10S17.523 2 12 2S2 6.477 2 12" />
                         <path
                             d="M13 2.05S16 6 16 12s-3 9.95-3 9.95m-2 0S8 18 8 12s3-9.95 3-9.95M2.63 15.5h18.74m-18.74-7h18.74" />
                     </g>
                 </svg></a>
+            <button class="hamburger"><svg width="auto" height="32px" viewBox="0 0 12 12"
+                    enable-background="new 0 0 12 12" id="Слой_1" version="1.1" xml:space="preserve"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g>
+                        <rect fill="#1D1D1B" height="1" width="11" x="0.5" y="5.5" />
+                        <rect fill="#1D1D1B" height="1" width="11" x="0.5" y="2.5" />
+                        <rect fill="#1D1D1B" height="1" width="11" x="0.5" y="8.5" />
+                    </g>
+                </svg>
+            </button>
         </div>
     </div>
     <main>
@@ -63,10 +76,13 @@
                 <img class="img" src="assets/services/solar/18solarpanel2.jpg">
             </div>
             <div class="services-about">
-                <h1>Solar Design & Installation</h1>
-                <p>At KB ENGINEERING CO., LTD., we prioritize innovation and sustainability in our solar
-                    installation services, empowering clients to harness clean energy while reducing their
-                    environmental impact. Let us help you transition to a more sustainable energy future.</p>
+                <div class="services-text">
+                    <h1>Solar Design & Installation</h1>
+                    <p>At KB ENGINEERING CO., LTD., we prioritize innovation and sustainability in our solar
+                        installation services, empowering clients to harness clean energy while reducing their
+                        environmental impact. Let us help you transition to a more sustainable energy future.</p>
+                </div>
+
             </div>
         </section>
         <section id="services">
@@ -75,58 +91,78 @@
                     <div class="display-text">Our Services</div>
                 </div>
                 <div class="services-column">
-                    <li class="service-container">
-                        <strong>Site Assessment</strong> We conduct detailed site assessments to evaluate solar
-                        potential, considering factors such as location, orientation, and shading to optimize energy
-                        production.
-                    </li>
-                    <li class="service-container">
-                        <strong>Solar PV System Design</strong> We design solar PV installations, covering
+                    <div class="service-container">
+                        <h2><strong>Site Assessment</strong> </h2><p>We conduct detailed site assessments to evaluate solar
+                            potential, considering factors such as location, orientation, and shading to optimize energy
+                            production.</p>
+                    </div>
+                    <div class="service-container">
+                        <h2>
+                            <strong>Solar PV System Design</strong>
+                        </h2> 
+                        <p>
+                            We design solar PV installations, covering
                         system
                         sizing,
                         module selection, inverter configuration, wiring, and grid connection. This ensures
                         efficient
                         energy
                         production and integration.
+                        </p>
+                    </div>
+                    <div class="service-container">
+                        <h2>
+                            <strong>Load Analysis</strong> 
+                        </h2>
+                        
+                        <p>
+                            Our detailed load analysis assesses energy needs to
+                            determine
+                            the
+                            appropriate size and capacity of electrical systems, including solar PV solutions, to
+                            meet
+                            demand
+                            without overloads.
+                        </p>
+                    </div>
+                    <li class="service-container">
+                        <h2>
+                            <strong>Installation</strong>
+                        </h2> 
+                        <p>We specialize in professional installation of solar PV
+                            systems, utilizing industry best practices and adhering to safety standards for reliable and
+                            effective energy generation.</p>
                     </li>
                     <li class="service-container">
-                        <strong>Load Analysis</strong> Our detailed load analysis assesses energy needs to
-                        determine
-                        the
-                        appropriate size and capacity of electrical systems, including solar PV solutions, to
-                        meet
-                        demand
-                        without overloads.
+                        <h2>
+                            <strong>Energy Efficiency</strong> 
+                        </h2><p>
+                            We recommend improvements to enhance energy
+                            efficiency,
+                            reducing
+                            consumption and operational costs.
+                        </p>
                     </li>
                     <li class="service-container">
-                        <strong>Installation</strong> We specialize in professional installation of solar PV
-                        systems, utilizing industry best practices and adhering to safety standards for reliable and
-                        effective energy generation.
-                    </li>
-                    <li class="service-container">
-                        <strong>Energy Efficiency</strong> We recommend improvements to enhance energy
-                        efficiency,
-                        reducing
-                        consumption and operational costs.
-                    </li>
-                    <li class="service-container">
-                        <strong>Regulatory Compliance</strong> We design and implement lightning protection
-                        systems
-                        to
-                        safeguard your structures and electrical systems from lightning strikes, ensuring
-                        maximum
-                        safety
-                        and compliance with safety standards.
+                        <h2>
+                            <strong>Regulatory Compliance</strong>
+                        </h2> <p>
+                            We design and implement lightning protection
+                            systems
+                            to
+                            safeguard your structures and electrical systems from lightning strikes, ensuring
+                            maximum
+                            safety
+                            and compliance with safety standards.
+                        </p>
                     </li>
                 </div>
             </div>
             </div>
         </section>
         <section id="project">
-
             <h1>Projects</h1>
             <div class="showcase">
-
                 <h2>SUN HSU Garment Co., Ltd. Solar PV Project</h2>
                 <hr>
                 <div class="project">
@@ -190,19 +226,20 @@
                     </div>
                 </div>
                 <div class="email-wrapper">
+                    <h3>E-Mail</h3>
                     <div class="email-wrapper-1">
                         <div class="email">
-                            <h3>Kimkel Kang</h3>
+                            <p>Kimkel Kang</p>
                             <button onclick="window.location.href='mailto:JBedwell@bariproduce.com'">Email</button>
                         </div>
                         <div class="email">
-                            <h3>Kim Sros</h3>
+                            <p>Kim Sros</p>
                             <button onclick="window.location.href='mailto:JBedwell@bariproduce.com'">Email</button>
                         </div>
                     </div>
                     <div class="email-wrapper-2">
                         <div class="email">
-                            <h3>Berta Kang</h3>
+                            <p>Berta Kang</p>
                             <button onclick="window.location.href='mailto:JBedwell@bariproduce.com'">Email</button>
                         </div>
                     </div>
@@ -227,8 +264,8 @@
                             <a class="portfolio-link"
                                 href="https://bertakang.github.io/BARI-Produce-Staging/#home">Groundwater Well
                                 Design</a>
-                            <a class="portfolio-link"
-                                href="https://bertakang.github.io/BARI-Produce-Staging/#home">Pump Design & Installationk</a>
+                            <a class="portfolio-link" href="https://bertakang.github.io/BARI-Produce-Staging/#home">Pump
+                                Design & Installation</a>
                         </div>
                     </div>
                 </div>
@@ -253,11 +290,11 @@
                     offer to buy, any goods or services. It is for informational purposes only.</p>
             </div>
             <div>
-                <p>© 2024 KB Engineering Co. LTD | Site designed by Berta Kang</p>
+                <p>© 2025 KB Engineering Co. LTD | Site designed by Berta Kang</p>
             </div>
         </div>
     </footer>
-    <script src="js/service.js" defer></script> <!-- Link to your JavaScript file -->
+    <script src="js/service.js" defer></script>
 </body>
 
 </html>

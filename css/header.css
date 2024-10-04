@@ -1,5 +1,5 @@
 .hamburger {
-    display:none;
+    display: none;
 }
 
 .header {
@@ -32,7 +32,7 @@
 }
 
 .header-right {
-    display: flex;     
+    display: flex;
 }
 
 /* dropdown container */
@@ -46,7 +46,7 @@
 /* dropdown button */
 .dropdown .dropbtn,
 .dropbtn i {
-    display:flex;
+    display: flex;
     height: 100%;
     font-size: 18px;
     border: none;
@@ -96,38 +96,33 @@
 
 
 /* mobile */
-@media screen and (max-width: 1440px) {
-
-}
+@media screen and (max-width: 1440px) {}
 
 @media screen and (max-width: 768px) {
 
-    html, body {
+    html,
+    body {
         max-width: 100vw;
-       
-        }
+    }
 
     .hamburger {
-        display:flex;
+        display: flex;
+        background-color: aliceblue;
 
-        background-color: aliceblue;   
-        
     }
 
     .language-text {
         display: none;
-      }
-    
-      .service-container {
-        padding: 24px;
-        margin: 0;
-      }
-      
-      svg.border {
+    }
+
+
+
+    svg.border {
         padding: 0;
         margin: 0;
-        display: block; /* Ensures there's no extra space around the SVG */
-      }
+        display: block;
+        /* Ensures there's no extra space around the SVG */
+    }
 
     .header {
         background-color: aliceblue;
@@ -139,7 +134,6 @@
         width: 100vw;
         height: 64px;
         z-index: 10000;
-       
     }
 
     .header-center {
@@ -151,7 +145,7 @@
         height: calc(100vh - 64px);
         width: 100vw;
         justify-content: start;
-        overflow-y: auto;
+        overflow-y: hidden;
         background-color: aliceblue;
     }
 
@@ -163,17 +157,15 @@
     }
 
     .menu-item {
-        position: relative;  /* or 'absolute' if needed */
-        left: -270px;      
-      
-        
+        position: relative;
+        left: -270px;
     }
 
     .dropdown {
         display: flex;
         flex-direction: column;
-        height:fit-content;
-       justify-content: baseline;
+        height: fit-content;
+        justify-content: baseline;
         color: darkslategray;
         text-align: center;
         padding-right: 12px;
@@ -182,15 +174,14 @@
 
     .dropdown-content {
         flex-direction: column;
-        position: relative; /* Changed from absolute */
-        top: 0;
+        position: relative;
         display: flex;
         background: none;
         text-align: end;
         justify-content: start;
         padding: 0px;
-        width: fit-content; /* Full width to prevent overlap */
-        max-height: calc(100vh - 80px); /* Prevent overflow */
+        width: fit-content;
+        max-height: calc(100vh - 80px);
         overflow-y: auto;
     }
 
@@ -202,14 +193,12 @@
 
     }
 
-    .column, .column h3, .column h4, .column a {
+    .column,
+    .column h3,
+    .column h4,
+    .column a {
         padding: 0px;
     }
-
-
-}
-
-@media screen and (max-width: 667px) {
 
 
 }

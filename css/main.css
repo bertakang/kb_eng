@@ -34,7 +34,7 @@ p {
 button {
     font-family: "Albert Sans", sans-serif;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 18px;
     background-color: #57abc6;
     padding: 8px 16px;
     border: none;
@@ -161,7 +161,6 @@ button {
     height: 100vh;
     align-items: center;
     justify-content: center;
-
 }
 
 /* clients */
@@ -207,11 +206,33 @@ button {
         font-size: 64px;
     }
 
+    #about {
+        padding: 0px;
+    }
+
+    .about-img-wrapper {
+        min-height: 100vh;
+    }
+
+    .about-text-wrapper {
+        max-height: 100vh;
+        padding: 0 32px;
+        margin: 0px;
+    }
 
 
+    .img {
+        height: 100vh;
+        width: 100%;
+        right: 0;
+        object-fit: cover;
+    }
+
+    
     .services-grid {
         grid-template-columns: 1fr 1fr ;
         grid-template-rows: 1fr 1fr 1fr;
+
     }
 
     .client-grid {
@@ -255,12 +276,7 @@ button {
         padding: 0;
     }
     
-    .img {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-       
-    }
+
 
     #about {
         flex-direction: column;

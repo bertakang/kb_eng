@@ -5,6 +5,7 @@ var hamburger = document.querySelector(".hamburger");
 var navigation = document.querySelector(".header-center"); // Assuming this is the navigation
 var menuItems = document.querySelectorAll(".menu-item");
 let menuOpen = false;  
+
 // Hover functionality for desktop view (for larger screens)
 dropdown.addEventListener("mouseenter", function () {
   if (!mediaQuery.matches) { // Apply hover only on desktop
