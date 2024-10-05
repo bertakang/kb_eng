@@ -44,8 +44,7 @@
 }
 
 /* dropdown button */
-.dropdown .dropbtn,
-.dropbtn i {
+.dropdown .dropbtn {
     display: flex;
     height: 100%;
     font-size: 18px;
@@ -96,7 +95,6 @@
 
 
 /* mobile */
-@media screen and (max-width: 1440px) {}
 
 @media screen and (max-width: 768px) {
 
@@ -199,6 +197,4 @@
     .column a {
         padding: 0px;
     }
-
-
 }
