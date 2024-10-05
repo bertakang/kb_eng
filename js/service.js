@@ -68,18 +68,6 @@ document.addEventListener("scroll", function () {
           duration: 50,
         });
 
-        borderPaths.forEach((path) => {
-          const pathLength = path.getTotalLength();
-          anime({
-          targets: path,
-          strokeDashoffset:  0.7 * pathLength * (1 -scrollPercentage), 
-          easing: "easeInOutSine",
-          duration: 0,
-          loop: true,
-
-          });
-      });
-
       } else if (scrollY < sectionTop) {
         anime({
           targets: section.querySelector(".project-image"),

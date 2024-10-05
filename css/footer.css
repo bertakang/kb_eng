@@ -11,7 +11,7 @@ button {
 }
 
 button:hover {
-    cursor:pointer;
+    cursor: pointer;
 }
 
 #contact {
@@ -65,7 +65,7 @@ button:hover {
     flex-direction: row;
     justify-content: space-between;
     padding: 8px 16px;
-    
+
 }
 
 .email-wrapper-1 {
@@ -118,13 +118,13 @@ footer {
 
     .email-wrapper {
         flex-direction: column;
-    
-            padding: 0px 0px;
-        }
-    
-        .email {
-            padding: 8px 0px;
-        }
+
+        padding: 0px 0px;
+    }
+
+    .email {
+        padding: 8px 0px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -150,20 +150,23 @@ footer {
     #contact {
         margin: 0px 16px;
     }
-    
+
     footer {
         padding: 0px 16px;
     }
-    
+
+    /* Footer */
+    .copyright p {
+        margin: 8px 0px;
+    }
+
 }
 
 @media screen and (max-width: 667px) {
-
-
     .portfolio-wrapper {
         flex-direction: column;
     }
 
 
-    
+
 }
