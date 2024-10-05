@@ -1,3 +1,9 @@
+window.addEventListener('load', function() {
+  var script = document.createElement('script');
+  script.src = "https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js";
+  document.body.appendChild(script);
+});
+
 // Select elements
 var dropdown = document.querySelector(".dropdown");
 var dropdownContent = document.querySelector(".dropdown-content");
