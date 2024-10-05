@@ -173,7 +173,7 @@ button {
     justify-content: center;
     text-align: center;
     margin: 64px 0px;
-    padding: 0px 32px;
+    padding: 80px 32px;
     position: relative;
 }
 
@@ -307,7 +307,7 @@ button {
     }
 
     #clients {
-        padding: 0px 16px;
+        padding: 64px 16px;
     }
 
     .client-grid {
