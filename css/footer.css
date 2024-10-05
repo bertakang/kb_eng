@@ -58,25 +58,24 @@ button:hover {
 /* email */
 .email-wrapper {
     display: flex;
+    flex-direction: column;
 }
 
 .email {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 8px 16px;
-
+    padding: 0px 0px;
+    align-items: center;
 }
 
 .email-wrapper-1 {
     display: flex;
     flex-direction: column;
-    flex: 1;
 }
 
 .email-wrapper-2 {
     display: flex;
-    flex: 1;
     flex-direction: column;
 }
 
