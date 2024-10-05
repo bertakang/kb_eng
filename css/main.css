@@ -25,8 +25,12 @@ svg {
     z-index: 0;
 }
 
+a, h1, h2, h3, {
+    font-family: 'Albert Sans', sans-serif;
+}
+
 p {
-    font-family: 'IBM Plex Sans', serif;
+    font-family: 'IBM Plex Sans', sans-serif;
     font-size: 20px;
     line-height: 1.2;
 }
