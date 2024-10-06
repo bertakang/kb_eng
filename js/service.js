@@ -63,9 +63,9 @@ document.addEventListener("scroll", function () {
   
   
         anime({
-          targets: section.querySelector(".project-image"),
-          translateX: `-${translateX}%`,
-          duration: 50,
+          targets: section.querySelectorAll(".project-image"),
+          translateX: `-${translateX}%`,    
+          duration: 50,      
         });
 
       } else if (scrollY < sectionTop) {
@@ -77,4 +77,3 @@ document.addEventListener("scroll", function () {
       }
     });
   });
-  

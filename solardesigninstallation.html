@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A brief description of the webpage content for SEO.">
-    <meta name="keywords" content="keyword1, keyword2, keyword3">
-    <meta name="author" content="Your Name">
+    <meta name="description"
+        content="Innovative engineering solutions and services in Cambodia, specializing in civil engineering, surveying, mobile app development, and solar design and installation. Our expert team delivers high-quality, sustainable practices to meet your construction and project management needs.">
+    <meta name="keywords"
+        content="Civil Engineering, Engineering Services Cambodia, Mobile App Development, Web Development, Groundwater Surveying, Land Surveying, Solar Design, Solar Installation Services, Groundwater Well Design, Pump Design and Installation, Innovative Engineering Solutions, Sustainable Engineering Practices, High-Quality Engineering, Professional Surveying Services, Reliable Engineering Firm, Custom Digital Solutions, Environmental Sustainability, Construction Project Management, Expert Engineering Team, Trusted Engineering Company">
+    <meta name="author" content="Berta Kang">
     <link rel="canonical" href="https://www.kbengineeringltd.com/">
     <title>KB Engineering | Civil Engineering and Mobile & Web Development Services</title>
 
@@ -32,7 +34,7 @@
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link 
+    <link
         href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
     <noscript>
@@ -79,16 +81,20 @@
             <div class="gallery-wrapper">
                 <div class="gallery">
                     <div class="project-image">
-                        <button onclick="openGalleryModal(0)"><img class="img" src="./assets/services/solar/18solarpanel2.webp"></button>
+                        <button onclick="openGalleryModal(0)"><img class="img"
+                                src="./assets/services/solar/18solarpanel2.webp"></button>
                     </div>
                     <div class="project-image">
-                        <button><img class="img" src="./assets/services/solar/lightningprotection.webp"></button>
+                        <button onclick="openGalleryModal(1)"><img class="img"
+                                src="./assets/services/solar/lightningprotection.webp"></button>
                     </div>
                     <div class="project-image">
-                        <button><img class="img" src="./assets/services/solar/Meeting with ELT 3.webp"></button>
+                        <button onclick="openGalleryModal(2)"><img class="img"
+                                src="./assets/services/solar/Meeting with ELT 3.webp"></button>
                     </div>
                     <div class="project-image">
-                        <button><img class="img" src="./assets/services/solar/solar.webp"></button>
+                        <button onclick="openGalleryModal(3)"><img class="img"
+                                src="./assets/services/solar/solar.webp"></button>
                     </div>
                 </div>
             </div>
@@ -101,12 +107,28 @@
                 </div>
             </div>
             <!-- Modal -->
-<div class="gallery-modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <span class="close" onclick="closeGalleryModal()">&times;</span>  
-    <div class="gallery-modal-image">
-        <img class="img" src="./assets/services/solar/lightningprotection.webp">
-      </div>
-  </div>
+            <div class="gallery-modal-wrapper">
+                <div class="gallery-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <span class="close" onclick="closeGalleryModal()">
+                        <?xml version="1.0" encoding="utf-8"?>
+                        <svg width="32px" height="32px" viewBox="0 0 1024 1024" fill="aliceblue" class="icon"
+                            version="1.1" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M176.662 817.173c-8.19 8.471-7.96 21.977 0.51 30.165 8.472 8.19 21.978 7.96 30.166-0.51l618.667-640c8.189-8.472 7.96-21.978-0.511-30.166-8.471-8.19-21.977-7.96-30.166 0.51l-618.666 640z"
+                                fill="" />
+                            <path
+                                d="M795.328 846.827c8.19 8.471 21.695 8.7 30.166 0.511 8.471-8.188 8.7-21.694 0.511-30.165l-618.667-640c-8.188-8.471-21.694-8.7-30.165-0.511-8.471 8.188-8.7 21.694-0.511 30.165l618.666 640z"
+                                fill="" />
+                        </svg>
+                    </span>
+                    <div class="gallery-modal-image">
+                        <img class="img" src="">
+                    </div>
+                    <div class="gallery-modal-description">
+                        <p></p>
+                    </div>
+                </div>
+            </div>
         </section>
         <section id="services">
             <div class="services-wrapper">
@@ -149,15 +171,15 @@
                             without overloads.
                         </p>
                     </div>
-                    <li class="service-container">
+                    <div class="service-container">
                         <h2>
                             <strong>Installation</strong>
                         </h2>
                         <p>We specialize in professional installation of solar PV
                             systems, utilizing industry best practices and adhering to safety standards for reliable and
                             effective energy generation.</p>
-                    </li>
-                    <li class="service-container">
+                        </div>
+                    <div class="service-container">
                         <h2>
                             <strong>Energy Efficiency</strong>
                         </h2>
@@ -167,8 +189,8 @@
                             reducing
                             consumption and operational costs.
                         </p>
-                    </li>
-                    <li class="service-container">
+                    </div>
+                    <div class="service-container">
                         <h2>
                             <strong>Regulatory Compliance</strong>
                         </h2>
@@ -181,7 +203,7 @@
                             safety
                             and compliance with safety standards.
                         </p>
-                    </li>
+                    </div>
                 </div>
             </div>
             </div>
@@ -255,18 +277,14 @@
                     <h3>E-Mail</h3>
                     <div class="email-wrapper-1">
                         <div class="email">
-                            <p>Kimkel Kang</p>
-                            <button onclick="window.location.href='mailto:JBedwell@bariproduce.com'">Email</button>
-                        </div>
-                        <div class="email">
-                            <p>Kim Sros</p>
-                            <button onclick="window.location.href='mailto:JBedwell@bariproduce.com'">Email</button>
+                            <p>Civil Engineering Team</p>
+                            <a href="mailto:civilengineering@kbengineeringltd.com" class="see-more">E-Mail</a>
                         </div>
                     </div>
                     <div class="email-wrapper-2">
                         <div class="email">
-                            <p>Berta Kang</p>
-                            <button onclick="window.location.href='mailto:JBedwell@bariproduce.com'">Email</button>
+                            <p>Software Development Team</p>
+                            <a href="mailto:softwaredevelopment@kbengineeringltd.com" class="see-more">E-Mail</a>
                         </div>
                     </div>
                 </div>
@@ -321,6 +339,54 @@
         </div>
     </footer>
     <script src="js/service.js" defer></script>
+    <script>
+        const galleryImages = [
+            {
+                src: './assets/services/solar/18solarpanel2.webp',
+                description: 'Solar panel installation at location X.'
+            },
+            {
+                src: './assets/services/solar/lightningprotection.webp',
+                description: 'Lightning protection installed at Baby Bird Farm in 2022.'
+            },
+            {
+                src: './assets/services/solar/Meeting with ELT 3.webp',
+                description: 'Meeting with ELT discussing solar panel designs.'
+            },
+            {
+                src: './assets/services/solar/solar.webp',
+                description: 'Solar panel installed on a commercial building.'
+            }
+        ];
+
+        let currentIndex = 0;
+
+        function openGalleryModal(index) {
+            // Set current image and description
+            currentIndex = index;
+            document.querySelector('.gallery-modal-image img').src = galleryImages[currentIndex].src;
+            document.querySelector('.gallery-modal-description p').textContent = galleryImages[currentIndex].description;
+
+            // Display the modal
+            document.querySelector('.gallery-modal-wrapper').style.display = 'flex';
+        }
+
+        function closeGalleryModal() {
+            // Hide the modal
+            document.querySelector('.gallery-modal-wrapper').style.display = 'none';
+        }
+
+        // Event listener to close the modal when clicking outside of it
+        document.querySelector('.gallery-modal-wrapper').addEventListener('click', function (event) {
+            const modalContent = document.querySelector('.gallery-modal');
+
+            // Check if the click is outside the modal content
+            if (!modalContent.contains(event.target)) {
+                closeGalleryModal();
+            }
+        });
+
+    </script>
 </body>
 
 </html>

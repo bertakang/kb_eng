@@ -91,6 +91,7 @@ hr {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    flex: 2;
 }
 
 .project-image {
@@ -110,11 +111,48 @@ button {
 }
 
 /* Intro Gallery */
+.gallery-modal-wrapper {
+    display: none;
+    position: fixed;
+    z-index: 10000;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: darkslategray;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.7); 
+}
+
 .gallery-modal {
     display: flex;
-    position: absolute;
+    position: relative;
+    flex-direction: column;
     height: 80vh;
-    border: yellowgreen 2px dashed;
+    max-width: 80vw;
+    object-fit: cover;
+    z-index: 100000000;
+    opacity: 1;
+}
+
+.gallery-modal-image {
+    width: auto;
+    height: 96%;
+    margin: 12px 0px;
+}
+
+.gallery-modal-description {
+    display: flex;
+    padding: 0px 32px;
+    color: aliceblue;
+    align-self: center;
+}
+
+.close {
+    align-self: end;
+    height: 32px;
+    width: 32px;
+    color: aliceblue;
     z-index: 100000000;
 }
 

@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A brief description of the webpage content for SEO.">
-    <meta name="keywords" content="keyword1, keyword2, keyword3">
-    <meta name="author" content="Your Name">
+    <meta name="description"
+        content="Innovative engineering solutions and services in Cambodia, specializing in civil engineering, surveying, mobile app development, and solar design and installation. Our expert team delivers high-quality, sustainable practices to meet your construction and project management needs.">
+    <meta name="keywords"
+        content="Civil Engineering, Engineering Services Cambodia, Mobile App Development, Web Development, Groundwater Surveying, Land Surveying, Solar Design, Solar Installation Services, Groundwater Well Design, Pump Design and Installation, Innovative Engineering Solutions, Sustainable Engineering Practices, High-Quality Engineering, Professional Surveying Services, Reliable Engineering Firm, Custom Digital Solutions, Environmental Sustainability, Construction Project Management, Expert Engineering Team, Trusted Engineering Company">
+    <meta name="author" content="Berta Kang">
     <link rel="canonical" href="https://www.kbengineeringltd.com/">
     <title>KB Engineering | Civil Engineering and Mobile & Web Development Services</title>
 
@@ -29,41 +31,76 @@
         integrity="sha512-aNMyYYxdIxIaot0Y1/PLuEu3eipGCmsEUBrUq+7aVyPGMFH8z0eTP0tkqAvv34fzN6z+201d3T8HPb1svWSKHQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+    <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Buenard:wght@400;700&display=swap" rel="stylesheet">
-
+    <noscript>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+            rel="stylesheet">
+    </noscript>
 </head>
 
 <body>
     <div class="header">
-        <a href="#default"><img class="logo" src="assets/logo.png" width="100px" alt="Image Description"></a>
+        <a href="#default"><img class="logo" src="assets/logo.webp" width="100px"
+                alt="KB Engineering Logo, symbolizing our commitment to building a stronger Cambodia through innovative engineering solutions."></a>
         <div class="header-center">
-            <a href="#intro">Intro</a>
-            <a href="#services">Services</a>
-            <a href="#project">Project</a>
-            <a href="#contact">Contact</a>
+            <a class="menu-item" href="#intro">Intro</a>
+            <a class="menu-item" href="#services">Services</a>
+            <a class="menu-item" href="#project">Project</a>
+            <a class="menu-item" href="#contact">Contact</a>
         </div>
         <div class="header-right">
-            <a>Language <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+            <a><span class="language-text">Language</span><svg xmlns="http://www.w3.org/2000/svg" width="24px"
+                    height="24px" viewBox="0 0 24 24">
+                    <g fill="none" stroke="darkslategray" stroke-linecap="round" stroke-linejoin="round"
                         stroke-width="1.5">
                         <path d="M2 12c0 5.523 4.477 10 10 10s10-4.477 10-10S17.523 2 12 2S2 6.477 2 12" />
                         <path
                             d="M13 2.05S16 6 16 12s-3 9.95-3 9.95m-2 0S8 18 8 12s3-9.95 3-9.95M2.63 15.5h18.74m-18.74-7h18.74" />
                     </g>
                 </svg></a>
+            <button class="hamburger"><svg width="32px" height="32px" viewBox="0 0 12 12"
+                    enable-background="new 0 0 12 12" id="Слой_1" version="1.1" xml:space="preserve"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g>
+                        <rect fill="#1D1D1B" height="1" width="11" x="0.5" y="5.5" />
+                        <rect fill="#1D1D1B" height="1" width="11" x="0.5" y="2.5" />
+                        <rect fill="#1D1D1B" height="1" width="11" x="0.5" y="8.5" />
+                    </g>
+                </svg>
+            </button>
         </div>
     </div>
     <main>
         <section id="intro" class="scroller">
-            <div class="project-image">
-                <img class="img" src="assets/services/groundwatersurvey/11groundwatersurvey.jpg">
+            <div class="gallery-wrapper">
+                <div class="gallery">
+                    <div class="project-image">
+                        <button onclick="openGalleryModal(0)"><img class="img"
+                                src="./assets/services/groundwatersurvey/11groundwatersurvey.webp"></button>
+                    </div>
+                    <div class="project-image">
+                        <button onclick="openGalleryModal(1)"><img class="img"
+                                src="./assets/services/groundwatersurvey/equipment.webp"></button>
+                    </div>
+                    <div class="project-image">
+                        <button onclick="openGalleryModal(2)"><img class="img"
+                                src="./assets/services/groundwatersurvey/flowrate.webp"></button>
+                    </div>
+                    <div class="project-image">
+                        <button onclick="openGalleryModal(3)"><img class="img"
+                                src="./assets/services/groundwatersurvey/water.webp"></button>
+                    </div>
+                </div>
             </div>
             <div class="services-about">
-                <h1>Groundwater Surveying</h1>
+                <div class="services-text">
+                    <h1>Groundwater Surveying</h1>
                 <p>At KB ENGINEERING CO., LTD., we offer comprehensive groundwater surveying services to assess water
                     availability, quality, and environmental sustainability. Our advanced techniques enable us to gather critical data
                     for effective resource management and project planning. <br>
@@ -71,7 +108,33 @@
                     We specialize in searching for water located below the earth’s surface in phreatic layers or aquifers, ensuring
                     that we pump it with utmost care and precision. This meticulous approach allows us to dig or drill wells in
                     optimal locations, avoiding costly and discouraging failures.</p>
+                </div>
             </div>
+            <!-- Modal -->
+            <div class="gallery-modal-wrapper">
+                <div class="gallery-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <span class="close" onclick="closeGalleryModal()">
+                        <?xml version="1.0" encoding="utf-8"?>
+                        <svg width="32px" height="32px" viewBox="0 0 1024 1024" fill="aliceblue" class="icon"
+                            version="1.1" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M176.662 817.173c-8.19 8.471-7.96 21.977 0.51 30.165 8.472 8.19 21.978 7.96 30.166-0.51l618.667-640c8.189-8.472 7.96-21.978-0.511-30.166-8.471-8.19-21.977-7.96-30.166 0.51l-618.666 640z"
+                                fill="" />
+                            <path
+                                d="M795.328 846.827c8.19 8.471 21.695 8.7 30.166 0.511 8.471-8.188 8.7-21.694 0.511-30.165l-618.667-640c-8.188-8.471-21.694-8.7-30.165-0.511-8.471 8.188-8.7 21.694-0.511 30.165l618.666 640z"
+                                fill="" />
+                        </svg>
+                    </span>
+                    <div class="gallery-modal-image">
+                        <img class="img" src="">
+                    </div>
+                    <div class="gallery-modal-description">
+                        <p></p>
+                    </div>
+                </div>
+
+            </div>
+
         </section>
         <section id="services">
             <div class="services-wrapper">
@@ -79,27 +142,46 @@
                     <div class="display-text">Our Services</div>
                 </div>
                 <div class="services-column">
-                    <li class="service-container">
-                        <strong>Detailed Groundwater Investigations</strong>We conduct thorough assessments to evaluate groundwater
+                    <div class="service-container">
+                        <h2>
+                            <strong>Detailed Groundwater Investigations</strong>
+                        </h2>
+                       <p>We conduct thorough assessments to evaluate groundwater
                         resources, ensuring informed decision-making for construction and environmental protection.
-                    </li>
-                    <li class="service-container">
-                        <strong>Geophysical Methods</strong> Our investigations primarily utilize geophysical methods for the detection of
-                        underground aquifers. The method chosen is tailored to the geological context of each site, ensuring
-                        effective results.
-                    </li>
-                    <li class="service-container">
-                        <strong>Echo Sounding Surveys</strong> Our echo sounding technology allows us to map underwater terrain
+                    </p> 
+                    </div>
+                    <div class="service-container">
+                        <h2>
+                            <strong>Geophysical Methods</strong>
+                        </h2>
+                        <p>Our investigations primarily utilize geophysical methods for the detection of
+                            underground aquifers. The method chosen is tailored to the geological context of each site, ensuring
+                            effective results.</p> 
+                    </div>
+                    <div class="service-container">
+                        <h2>
+                            <strong>Echo Sounding Surveys</strong> 
+                        </h2>
+                        <p>
+                            Our echo sounding technology allows us to map underwater terrain
                         accurately, providing essential data for marine construction, dredging, and resource exploration.
-                    </li>
-                    <li class="service-container">
-                        <strong>Water Quality Analysis</strong> We test for various chemical and physical properties to ensure the safety and
-                        suitability of groundwater for its intended use.
-                    </li>
-                    <li class="service-container">
-                        <strong>Hydrogeological Studies</strong> Our team performs detailed studies to understand aquifer characteristics,
-                        groundwater flow, and recharge rates, providing critical insights for sustainable resource management.
-                    </li>
+                        </p>
+
+                    </div>
+                    <div class="service-container">
+                        <h2>
+                            <strong>Water Quality Analysis</strong>
+                        </h2>
+                         <p>We test for various chemical and physical properties to ensure the safety and
+                            suitability of groundwater for its intended use.</p>
+                    </div>
+                    <div class="service-container">
+                        <h2>
+                            <strong>Hydrogeological Studies</strong> 
+                        </h2>
+                        <p>Our team performs detailed studies to understand aquifer characteristics,
+                            groundwater flow, and recharge rates, providing critical insights for sustainable resource management.</p>
+                    </div>
                 </div>
             </div>
             </div>
@@ -108,10 +190,10 @@
             <div class="contact-wrapper">
                 <div class="contact-navbar">
                     <nav class="contact-nav-links-wrapper">
-                        <a class="nav-link" href="#home">Home</a>
-                        <a class="nav-link" href="/#about">About</a>
-                        <a class="nav-link" href="#services">Services</a>
-                        <a class="nav-link" href="/#career">Career</a>
+                        <a class="nav-link" href="#home">Intro</a>
+                        <a class="nav-link" href="/#services">Services</a>
+                        <a class="nav-link" href="#project">Project</a>
+                        <a class="nav-link" href="/#contact">Contact</a>
                     </nav>
                 </div>
                 <div class="info-wrapper">
@@ -135,20 +217,17 @@
                     </div>
                 </div>
                 <div class="email-wrapper">
+                    <h3>E-Mail</h3>
                     <div class="email-wrapper-1">
                         <div class="email">
-                            <h3>Kimkel Kang</h3>
-                            <button onclick="window.location.href='mailto:JBedwell@bariproduce.com'">Email</button>
-                        </div>
-                        <div class="email">
-                            <h3>Kim Sros</h3>
-                            <button onclick="window.location.href='mailto:JBedwell@bariproduce.com'">Email</button>
+                            <p>Civil Engineering Team</p>
+                            <a href="mailto:civilengineering@kbengineeringltd.com" class="see-more">E-Mail</a>
                         </div>
                     </div>
                     <div class="email-wrapper-2">
                         <div class="email">
-                            <h3>Berta Kang</h3>
-                            <button onclick="window.location.href='mailto:JBedwell@bariproduce.com'">Email</button>
+                            <p>Software Development Team</p>
+                            <a href="mailto:softwaredevelopment@kbengineeringltd.com" class="see-more">E-Mail</a>
                         </div>
                     </div>
                 </div>
@@ -172,8 +251,8 @@
                             <a class="portfolio-link"
                                 href="https://bertakang.github.io/BARI-Produce-Staging/#home">Groundwater Well
                                 Design</a>
-                            <a class="portfolio-link"
-                                href="https://bertakang.github.io/BARI-Produce-Staging/#home">Pump Design & Installation</a>
+                            <a class="portfolio-link" href="https://bertakang.github.io/BARI-Produce-Staging/#home">Pump
+                                Design & Installation</a>
                         </div>
                     </div>
                 </div>
@@ -183,7 +262,7 @@
 
     <footer>
         <div>
-            <div>
+            <div class="copyright">
                 <p>KB Engineering does not collect visitor data from our site. KB Engineering does monitor the number of
                     site views
                     and other non-visitor specific data concerning the performance of the site in general. Regarding
@@ -197,12 +276,60 @@
                     solicitation of an
                     offer to buy, any goods or services. It is for informational purposes only.</p>
             </div>
-            <div>
-                <p>© 2024 KB Engineering Co. LTD | Site designed by Berta Kang</p>
+            <div class="copyright">
+                <p>© 2025 KB Engineering Co. LTD | Site designed by Berta Kang</p>
             </div>
         </div>
     </footer>
-    <script src="js/service.js" defer></script> <!-- Link to your JavaScript file -->
+    <script src="js/service.js" defer></script>
+    <script>
+        const galleryImages = [
+            {
+                src: './assets/services/groundwatersurvey/11groundwatersurvey.webp',
+                description: 'KB Engineering staff checking the pump control panel for Baby Bird Farm.'
+            },
+            {
+                src: './assets/services/groundwatersurvey/equipment.webp',
+                description: 'Water flow meter for KB Engineering pump installation on Baby Bird Farm.'
+            },
+            {
+                src: './assets/services/groundwatersurvey/flowrate.webp',
+                description: 'KB Engineering installed two high-efficiency pumps on the farm to ensure continuous and reliable water flow.'
+            },
+            {
+                src: './assets/services/groundwatersurvey/water.webp',
+                description: 'KB Engineering installed high-capacity water tank on the farm, supported by a pump system located behind it to ensure efficient irrigation and water supply for crops and livestock..'
+            }
+        ];
+
+        let currentIndex = 0;
+
+        function openGalleryModal(index) {
+            // Set current image and description
+            currentIndex = index;
+            document.querySelector('.gallery-modal-image img').src = galleryImages[currentIndex].src;
+            document.querySelector('.gallery-modal-description p').textContent = galleryImages[currentIndex].description;
+
+            // Display the modal
+            document.querySelector('.gallery-modal-wrapper').style.display = 'flex';
+        }
+
+        function closeGalleryModal() {
+            // Hide the modal
+            document.querySelector('.gallery-modal-wrapper').style.display = 'none';
+        }
+
+        // Event listener to close the modal when clicking outside of it
+        document.querySelector('.gallery-modal-wrapper').addEventListener('click', function (event) {
+            const modalContent = document.querySelector('.gallery-modal');
+
+            // Check if the click is outside the modal content
+            if (!modalContent.contains(event.target)) {
+                closeGalleryModal();
+            }
+        });
+
+    </script>
 </body>
 
 </html>
