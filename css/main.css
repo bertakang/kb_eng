@@ -36,19 +36,6 @@ p {
     line-height: 1.2;
 }
 
-.see-more {
-    font-family: "Albert Sans", sans-serif;
-    font-weight: bold;
-    font-size: 18px;
-    background-color: #235967;
-    padding: 8px 16px;
-    border: none;
-    border-radius: 6px;
-    color: aliceblue;
-    z-index: 1000;
-    height: 24px;
-    text-decoration: none;
-}
 
 /* home */
 #home {

@@ -51,17 +51,7 @@ p {
     margin: 0px;
 }
 
-button {
-    font-family: "Albert Sans", sans-serif;
-    font-weight: bold;
-    font-size: 18px;
-    background-color: #57abc6;
-    padding: 8px 16px;
-    border: none;
-    border-radius: 6px;
-    color: aliceblue;
-    z-index: 1000;
-}
+
 
 hr {
     height: 1px;
@@ -88,13 +78,44 @@ hr {
     padding: 0px 32px;
 }
 
-.project-image {
+.gallery-wrapper {
     display: flex;
     flex: 2;
     width: 100%;
     bottom: 0px;
     height: calc(100vh - 80px);
     padding-top: 80px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.project-image {
+    height: calc((100vh - 80px) / 2);
+    width: 100%;
+}
+
+button {
+    display:flex;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Intro Gallery */
+.gallery-modal {
+    display: flex;
+    position: absolute;
+    height: 80vh;
+    border: yellowgreen 2px dashed;
+    z-index: 100000000;
 }
 
 /* Services */

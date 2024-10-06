@@ -1,17 +1,17 @@
 /* footer */
-button {
+
+.see-more {
     font-family: "Albert Sans", sans-serif;
     font-weight: bold;
-    font-size: 20px;
-    background-color: #57abc6;
+    font-size: 18px;
+    background-color: #235967;
     padding: 8px 16px;
     border: none;
     border-radius: 6px;
     color: aliceblue;
-}
-
-button:hover {
-    cursor: pointer;
+    z-index: 1000;
+    height: 24px;
+    text-decoration: none;
 }
 
 #contact {

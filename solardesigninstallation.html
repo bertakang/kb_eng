@@ -32,16 +32,20 @@
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
-        rel="stylesheet">
+    <noscript>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+            rel="stylesheet">
+    </noscript>
 </head>
 
 <body>
     <div class="header">
-        <a href="#default"><img class="logo" src="assets/logo.png" width="100px" alt="Image Description"></a>
+        <a href="#default"><img class="logo" src="assets/logo.webp" width="100px"
+                alt="KB Engineering Logo, symbolizing our commitment to building a stronger Cambodia through innovative engineering solutions."></a>
         <div class="header-center">
             <a class="menu-item" href="#intro">Intro</a>
             <a class="menu-item" href="#services">Services</a>
@@ -72,8 +76,21 @@
     </div>
     <main>
         <section id="intro" class="scroller">
-            <div class="project-image">
-                <img class="img" src="assets/services/solar/18solarpanel2.jpg">
+            <div class="gallery-wrapper">
+                <div class="gallery">
+                    <div class="project-image">
+                        <button onclick="openGalleryModal(0)"><img class="img" src="./assets/services/solar/18solarpanel2.webp"></button>
+                    </div>
+                    <div class="project-image">
+                        <button><img class="img" src="./assets/services/solar/lightningprotection.webp"></button>
+                    </div>
+                    <div class="project-image">
+                        <button><img class="img" src="./assets/services/solar/Meeting with ELT 3.webp"></button>
+                    </div>
+                    <div class="project-image">
+                        <button><img class="img" src="./assets/services/solar/solar.webp"></button>
+                    </div>
+                </div>
             </div>
             <div class="services-about">
                 <div class="services-text">
@@ -82,8 +99,14 @@
                         installation services, empowering clients to harness clean energy while reducing their
                         environmental impact. Let us help you transition to a more sustainable energy future.</p>
                 </div>
-
             </div>
+            <!-- Modal -->
+<div class="gallery-modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <span class="close" onclick="closeGalleryModal()">&times;</span>  
+    <div class="gallery-modal-image">
+        <img class="img" src="./assets/services/solar/lightningprotection.webp">
+      </div>
+  </div>
         </section>
         <section id="services">
             <div class="services-wrapper">
@@ -92,29 +115,30 @@
                 </div>
                 <div class="services-column">
                     <div class="service-container">
-                        <h2><strong>Site Assessment</strong> </h2><p>We conduct detailed site assessments to evaluate solar
+                        <h2><strong>Site Assessment</strong> </h2>
+                        <p>We conduct detailed site assessments to evaluate solar
                             potential, considering factors such as location, orientation, and shading to optimize energy
                             production.</p>
                     </div>
                     <div class="service-container">
                         <h2>
                             <strong>Solar PV System Design</strong>
-                        </h2> 
+                        </h2>
                         <p>
                             We design solar PV installations, covering
-                        system
-                        sizing,
-                        module selection, inverter configuration, wiring, and grid connection. This ensures
-                        efficient
-                        energy
-                        production and integration.
+                            system
+                            sizing,
+                            module selection, inverter configuration, wiring, and grid connection. This ensures
+                            efficient
+                            energy
+                            production and integration.
                         </p>
                     </div>
                     <div class="service-container">
                         <h2>
-                            <strong>Load Analysis</strong> 
+                            <strong>Load Analysis</strong>
                         </h2>
-                        
+
                         <p>
                             Our detailed load analysis assesses energy needs to
                             determine
@@ -128,15 +152,16 @@
                     <li class="service-container">
                         <h2>
                             <strong>Installation</strong>
-                        </h2> 
+                        </h2>
                         <p>We specialize in professional installation of solar PV
                             systems, utilizing industry best practices and adhering to safety standards for reliable and
                             effective energy generation.</p>
                     </li>
                     <li class="service-container">
                         <h2>
-                            <strong>Energy Efficiency</strong> 
-                        </h2><p>
+                            <strong>Energy Efficiency</strong>
+                        </h2>
+                        <p>
                             We recommend improvements to enhance energy
                             efficiency,
                             reducing
@@ -146,7 +171,8 @@
                     <li class="service-container">
                         <h2>
                             <strong>Regulatory Compliance</strong>
-                        </h2> <p>
+                        </h2>
+                        <p>
                             We design and implement lightning protection
                             systems
                             to
