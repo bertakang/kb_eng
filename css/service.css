@@ -274,6 +274,17 @@ button {
         margin-top: 64px;
     }
 
+    .gallery-wrapper {
+        padding-top: 0px;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        flex: 1;
+    }
+
 
     .project-image {
         display: flex;

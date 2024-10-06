@@ -148,6 +148,12 @@
         background-color: aliceblue;
     }
 
+    .header-right {
+        display: flex;
+        margin-right: 16px;
+        align-items: center;
+    }
+
     .header a {
 
         text-align: end;

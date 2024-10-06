@@ -48,32 +48,35 @@ let menuOpen = false;
 
 //animeJS functionality
 document.addEventListener("scroll", function () {
-    const sections = document.querySelectorAll(".scroller");
-    const scrollY = window.scrollY;
+  const sections = document.querySelectorAll(".scroller");
+  const scrollY = window.scrollY;
+  const screenWidth = window.innerWidth;
 
-    sections.forEach((section) => {
-      const sectionRect = section.getBoundingClientRect();
-      const sectionHeight = sectionRect.height;
-      const sectionTop = sectionRect.top + window.scrollY;
-      const sectionBottom = sectionTop + sectionHeight;
-  
-      if (scrollY >= sectionTop && scrollY < sectionBottom) {
-        const scrollPercentage = (scrollY - sectionTop) / sectionHeight;
-        const translateX = scrollPercentage * 100;
-  
-  
-        anime({
-          targets: section.querySelectorAll(".project-image"),
-          translateX: `-${translateX}%`,    
-          duration: 50,      
-        });
+  // Check if the screen width is larger than 768px
+  if (screenWidth > 768) {
+      sections.forEach((section) => {
+          const sectionRect = section.getBoundingClientRect();
+          const sectionHeight = sectionRect.height;
+          const sectionTop = sectionRect.top + window.scrollY;
+          const sectionBottom = sectionTop + sectionHeight;
 
-      } else if (scrollY < sectionTop) {
-        anime({
-          targets: section.querySelector(".project-image"),
-          translateX: "0vw",
-          duration: 50,
-        });
-      }
-    });
-  });
+          if (scrollY >= sectionTop && scrollY < sectionBottom) {
+              const scrollPercentage = (scrollY - sectionTop) / sectionHeight;
+              const translateX = scrollPercentage * 100;
+
+              anime({
+                  targets: section.querySelectorAll(".project-image"),
+                  translateX: `-${translateX}%`,
+                  duration: 50,
+              });
+
+          } else if (scrollY < sectionTop) {
+              anime({
+                  targets: section.querySelector(".project-image"),
+                  translateX: "0vw",
+                  duration: 50,
+              });
+          }
+      });
+  }
+});
