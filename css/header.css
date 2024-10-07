@@ -107,7 +107,7 @@
     .hamburger {
         display: flex;
         background-color: aliceblue;
-
+        border: none;
     }
 
     .language-text {
