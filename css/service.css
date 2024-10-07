@@ -285,6 +285,13 @@ button {
         flex: 1;
     }
 
+    .gallery-modal-wrapper {
+        height: 100vh;
+        width: 100%;
+        top: 0px;
+
+    }
+
 
     .project-image {
         display: flex;
