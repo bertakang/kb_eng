@@ -196,6 +196,7 @@ p {
     object-fit: contain;
 }
 
+
 @media screen and (max-width: 1440px) {
     .intro {
         font-size: 64px;
